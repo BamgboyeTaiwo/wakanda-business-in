@@ -1,0 +1,173 @@
+
+.Header {
+    padding: 5px 20px;
+}
+
+
+/* ---------------login and signup Button styles-------------------------  */
+.login{
+    
+    border: 1px solid #00A85A;
+    color: #648B7A;
+    background-color: #FFFFFF !important;
+    margin-right: 0.5rem;
+    box-shadow: 0px 15px 15px #18A75D26;
+    border-radius: 8px;
+
+}
+.login:hover{
+    border: 1px solid #00A85A;
+    background-color: #00A85A !important;
+    color: #FFFFFF;
+    
+}
+.login:active{
+
+    border: 1px solid #00A85A !important;
+    background-color: #00A85A !important;
+    
+}
+.signup{
+    background-color: #00A85A !important;
+    border-radius: 8px !important;
+    color: #EFF7F0;
+    border: none;
+    box-shadow: 0px 15px 15px #18A75D4D;
+}
+.signup:hover{
+    border: 1px solid #068a4c;
+    background-color: #068a4c !important;
+    color: #FFFFFF;
+}
+.signup:active{
+    border: 1px solid #068a4c !important;
+    background-color: #068a4c !important;
+    
+}
+
+.marginsides{
+    margin: 0px 15px;
+}
+
+
+
+/* max width 567px and below   Mobile view  */
+@media (max-width: 576px) {
+    .marginsides{
+        margin: 5px 0px;
+        border-bottom: 1px solid #e9e9e9
+    }
+    .login, .signup {
+        width: 90px;
+        font-size: small;
+        border: none;
+    }
+
+    .flexend{
+        padding-left: 20px;
+    }
+    .navlink{
+        padding-left: 20px !important;
+    }
+    .endnavdiv {
+        flex-direction: row;
+        padding-left: 20px;
+    }
+    .endnavdiv button {
+        margin-right: 20px;
+    }
+    .Header {
+        /* display: block; */
+        padding: 5px 20px;
+    }
+
+}
+
+/* Style 576px to 768px  large mobile view  */
+@media (min-width: 576px) and (max-width:800px) {
+    /* .Header{
+        max-height: 90% !important ;
+    } */
+    .marginsides{
+        margin: 0px 5px;
+    }
+    .login, .signup {
+        width: 59px;
+        font-size: x-small;
+    }
+    .signup{
+        width: 60px;
+    }
+
+    .innernavdiv{
+        font-size: x-small; 
+        font-weight: bolder; 
+    }
+    .Header {
+        /* display: block; */
+        padding: 5px 20px;
+    }
+    .Header Navbar {
+        padding-left: 20px;
+    }
+}
+
+
+
+
+/* Max width 991px  from 767px to 991px  Tablet View  */
+
+@media (min-width: 767px) and (max-width:990px) {
+    .marginsides{
+        margin: 0px 5px;
+
+    }
+    .buttonresize{
+        font-size: x-small;
+        font-weight: bolder;
+        width: 70px;
+        margin: 0px 10px;
+    }
+    .Header {
+        padding: 5px 20px;
+    }
+    .Navbar {
+        padding-left: 20px !important;
+    }
+
+} 
+
+@media (min-width: 991px) {
+    .marginsides{
+        margin: 0px 10px;
+        font-size: medium;
+
+    }
+    .buttonresize{
+        font-size: medium;
+        width: 85px;
+        margin: 0px 15px;
+    }
+    .login, .signup {
+        width: 59px;
+        font-size: x-small;
+    }
+    .signup{
+        width: 60px;
+    }
+    .Header {
+        /* display: block; */
+        padding: 5px 20px;
+    }
+    .Header .Navbar {
+        padding-left: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    .flexend{
+        justify-content: flex-end;
+        font-weight: bold;
+    }
+
+}

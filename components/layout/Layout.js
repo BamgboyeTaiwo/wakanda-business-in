@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <div>
       <Head>
-        <title>Wakanda Business</title>
+            
       </Head>
 
       <div>

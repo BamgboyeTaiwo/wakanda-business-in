@@ -1,9 +1,15 @@
+@import url('https://fonts.google.com/share?selection.family=Raleway:wght@500;600;700');
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('/public/Raleway-SemiBold.ttf');
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:'Raleway';
 }
 
 a {
@@ -14,3 +20,6 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
