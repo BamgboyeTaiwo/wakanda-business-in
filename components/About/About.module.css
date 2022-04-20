@@ -1,0 +1,59 @@
+.container{
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    padding-top: 10vh;
+}
+
+
+/* .fbox1{
+    
+} */
+.button{
+    background-color: #00A85A ;
+    outline: none !important;
+    border: 1px solid #00A85A ;
+}
+.button:hover,
+.button:focus,
+.button:active{
+    border: 1px solid #97bd36 ;
+    background:#00A85A ;
+    transition: .3s ease-in-out !important;
+}
+
+.fbox1{
+    /* width: 70%; */
+    /* background-color: red; */
+
+}
+.flexbox2{
+    margin-right: 5vw !important;
+    /* width: 30%; */
+    background-color: green;
+    text-align: center;
+}
+
+.greenrect{
+    width: 50%;
+    height: 200px;
+    background-color: #97bd36;
+    border-radius: 10px;
+    position: relative;
+    top: 30%;
+
+
+}
+
+
+
+@media (min-width: 280px) and (max-width: 575px) {
+
+    .fbox1{
+    
+    }
+
+    
+
+}

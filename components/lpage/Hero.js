@@ -61,7 +61,7 @@ export default function Content() {
             </Col>
             <Col className={ContentStyles.bottomcollast}>
               <div className={ContentStyles.bottomtext3}>
-                  <span className={ContentStyles.bottomspan} >Manage your staff and business</span>
+                  <span className={`${ContentStyles.bottomspan3} ${ContentStyles.bottomspan} `} >Manage your staff and business</span>
                   <p className={ContentStyles.bottomP}>processes without sweat</p>
               </div>
             </Col>

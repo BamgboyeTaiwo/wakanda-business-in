@@ -5,6 +5,7 @@ import styles from "./Home.module.css";
 import React, { useState } from "react";
 import { Layout } from "../layout";
 import  Hero  from "../lpage/Hero"
+import About from "../About/About";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           <main>
             
             <Hero/>
+            <About/>
 
 
           </main>
