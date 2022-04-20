@@ -1,7 +1,7 @@
 
 
 .banner{
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../../public/Assets/Group\ 707.png");
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../../public/Group\ 707.png");
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     /* background-size: cover; */
