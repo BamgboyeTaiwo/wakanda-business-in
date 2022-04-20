@@ -1,7 +1,7 @@
 
 
 .banner{
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("/pexels-rfstudio-3810788.jpg");
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../../public/Group\ 707.png");
     background-blend-mode: multiply;
     background-repeat: no-repeat;
     /* background-size: cover; */
@@ -96,19 +96,19 @@
 }
 
 .bottomspan {
-    font-size: medium;
+    font-size: 13px;
     font-weight: bold;
 }
 .text1{
     margin-right: 10px;
-    text-align: right;
+    text-align: center;
     
 }
 .bottomtext2{
     text-align: center;
 }
 .bottomtext3{
-    text-align: left;
+    text-align: center;
     margin-left: 10px;
 }
 
@@ -124,19 +124,100 @@
 
         text-align: center;  
     }
+
 }
 
-@media (max-width: 567px) {
+ /* 320px to 575px styles  */
+
+@media (min-width: 200px) and (max-width: 575px) {
     .bottomspan {
         font-size:  0.8rem;
         font-weight: bold;
     }
+
     .bottomtext3{
         text-align: center;
+    }
+    .bottomspan3{
+        font-size: 13px !important;
+        font-weight: 700;
+    }
+    .Herotext,.Herotext2{
+        font-size: max(6vw,7vw);
+    }
+    .CustomHerotext{
+        font-size: 10vw;
+    }
+    .text1{
+        margin-right: 0 !important;
+        text-align: center;
+        
+    }
+    .bottomspan{
+        font-size: 3vw;
+    }
+    .bottomspan3{
+        font-size: 2.7vw !important;
+    }
+    .bottomP{
+        font-size: 10px;
+    }
+    .bottomtext3{
+        text-align: center;
+        margin-left: 0 !important;
+    }
+
+    /* .text1,.bottomtext2,.bottomtext3{
+        white-space: nowrap;
+    } */
+}
+
+
+
+@media (min-width: 767px) {
+    .bottomspan3{
+        font-size: 13px !important;
     }
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 567px) and (max-width:767px) {
+    .bottomP{
+        font-size: 11px;
+    }
+    .bottomspan3{
+        font-size: 12px !important;
+    }
+    .Herotext,.Herotext2{
+        font-size: 6vw;
+    }
+
+}
+
+
+
+
+
+/* unusual tweeks */
+@media (min-width: 567px) and (max-width:706px) {
+    /* .bottomP{
+        font-size: 11px;
+    } */
+    .bottomspan3{
+        font-size: 12px !important;
+        font-weight: 800;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .Herotext,.Herotext2{
+        font-size: xxx-large;
+    }
+    .CustomHerotext{
+        font-size: xxx-large;
+    }
+
 
 }
