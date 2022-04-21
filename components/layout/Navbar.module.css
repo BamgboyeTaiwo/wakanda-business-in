@@ -97,6 +97,7 @@
     }
     .navlink{
         padding-left: 20px !important;
+        color: #163828 !important;
     }
     .endnavdiv {
         flex-direction: row;
@@ -147,11 +148,13 @@
     }
     .Header Navbar {
         padding-left: 20px;
+        
     }
     .img{
         min-width: 80% !important;
         padding-left: 0px !important;
         margin: 0 !important;
+       
     }
     .navadjust{
         white-space: nowrap;

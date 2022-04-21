@@ -38,18 +38,20 @@
 }
 .herocontentdivh2{
     text-shadow: 0px 3px 15px #00000040;
-    font-weight: 700;
+    font-weight:500;
+    font-size:55px !important;
+    font-family: 'Raleway', sans-serif;
 
 }
 .CustomHerotext{
-    font-size:xxx-large ;
-    /* font-family: ; */
-    font: normal normal medium 110px/121px Raleway;
+    font-size:75px !important;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
     color: #A9D046;
     text-shadow: 0px 10px 20px #00000026;
     opacity: 1;
     text-align: center;
-    font-weight: 500;
+   
 }
 
 /*---------------------------Get started Button --------------------------*/
@@ -76,15 +78,17 @@
 }
 
 
-/* -----------------------buttom section Styles-------------------------------- */
+/* -----------------------bottom section Styles-------------------------------- */
 
 .Row{
     margin: auto;
 }
 
 .bottom{
-    padding: 0.5rem 0 0.5rem 0rem;
+    padding: 0.5rem;
+    padding-top: 1rem;
     background: #00A85A;
+   
 }
 .bottomcol{
     border-right: 2px solid #A9D046 ;
@@ -96,8 +100,9 @@
 }
 
 .bottomspan {
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
 }
 .text1{
     margin-right: 10px;
@@ -113,7 +118,9 @@
 }
 
 .bottomP{
-    font-size: small;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
 }
 .Herotext{
     margin-bottom: 0;
@@ -139,28 +146,36 @@
         text-align: center;
     }
     .bottomspan3{
-        font-size: 13px !important;
-        font-weight: 700;
+        font-size: 18px !important;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
     }
     .Herotext,.Herotext2{
         font-size: max(6vw,7vw);
+        font-family: 'Raleway', sans-serif;
     }
     .CustomHerotext{
         font-size: 10vw;
+        font-family: 'Raleway', sans-serif;
     }
     .text1{
         margin-right: 0 !important;
         text-align: center;
+        font-family: 'Raleway', sans-serif;
         
     }
     .bottomspan{
         font-size: 3vw;
     }
     .bottomspan3{
-        font-size: 2.7vw !important;
+        font-size: 18px !important;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
     }
     .bottomP{
-        font-size: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
     }
     .bottomtext3{
         text-align: center;
