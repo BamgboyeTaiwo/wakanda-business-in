@@ -6,6 +6,9 @@ import React, { useState } from "react";
 import { Layout } from "../layout";
 import  Hero  from "../lpage/Hero"
 import About from "../About/About";
+import Offers from "../lpage/Offers";
+import CustomerEmpowerment from "../lpage/customerEmpower";
+import StaffMang from "../lpage/staffManagement";
 
 export default function Home() {
   return (
@@ -25,8 +28,11 @@ export default function Home() {
 
           <main>
             
-            <Hero/>
-            <About/>
+            {/* <Hero/> */}
+            {/* <About/> */}
+            <Offers/>
+            <CustomerEmpowerment/>
+            <StaffMang/>
 
 
           </main>
