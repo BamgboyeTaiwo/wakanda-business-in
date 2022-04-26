@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Offers() {
   const img = require(`../../public/offers1.png`).default;
   return (
-    <section className="bg-[#EFF7F0] pt-4 text-[#163828] font-body">
+    <section className="bg-[#EFF7F0] pt-4 text-[#163828] font-body" id='Features'>
       <div className={`container sm:pb-3 px-3 ${styles.containerst}`}>
         <h1
           className={` text-center text-2xl font-semibold tracking-wider text-[#163828] py-2 mt-4 font-body ${styles.title}`}

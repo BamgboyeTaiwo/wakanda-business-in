@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 import styles from "./customerEmpower.module.css";
 
 export default function customerEmpower() {
@@ -42,12 +43,18 @@ export default function customerEmpower() {
               className={`text-[#00A85A] font-['Raleway'] text-bold sm:text-[15px] mb-4 lg:mb-5 ${styles.businessheader}`}
             >
               CUSTOMER EMPOWERMENT
-              {/* <hr className={styles.dash}/> */}
+              
             </h1>
             <div className={styles.cols}>
               <div className="grid grid-cols-12 sm:mb-3 lg:mb-3 md:mb-1">
                 <div className="col-span-3 mx-2 ">
-                  <img src="/images/Group -8.png" alt="" />
+                  {/* <img src="/images/Group -8.png" alt="" /> */}
+                  <Image
+                    src="/Help customer.svg"
+                    alt="Wakanda"
+                    width={472}
+                    height={356}
+                  />
                 </div>
                 <div className={`col-span-9 ${styles.content_title}`}>
                   <h3 className="">Help your customers succeeds</h3>
@@ -62,7 +69,12 @@ export default function customerEmpower() {
 
               <div className="grid grid-cols-12  sm:mb-3 md:mb-1 lg:mb-3">
                 <div className="col-span-3 mx-2 ">
-                  <img src="/images/Group -7.png" alt="" />
+                <Image
+                    src="/performance-icon.svg"
+                    alt="Wakanda"
+                    width={472}
+                    height={356}
+                  />
                 </div>
                 <div className={`col-span-9 ${styles.content_title}`}>
                   <h3>Performance Report</h3>
@@ -75,7 +87,13 @@ export default function customerEmpower() {
               </div>
               <div className="grid grid-cols-12  sm:mb-3 md:mb-1 lg:mb-6">
                 <div className="col-span-3 mx-2 ">
-                  <img src="/images/Group -6.png" alt="" />
+                  {/* <img src="/images/Group -6.png" alt="" /> */}
+                  <Image
+                    src="/Easy to use.svg"
+                    alt="Wakanda"
+                    width={472}
+                    height={356}
+                  />
                 </div>
                 <div className={`col-span-9 ${styles.content_title}`}>
                   <h3>Free! and Easy to Use</h3>
@@ -88,7 +106,12 @@ export default function customerEmpower() {
 
               <div className="grid grid-cols-12  sm:mb-3 md:mb-1 lg:mb-6">
                 <div className="col-span-3 mx-2 ">
-                  <img src="/images/Group -5.png" alt="" />
+                <Image
+                    src="/communicate-icon.svg"
+                    alt="Wakanda"
+                    width={472}
+                    height={356}
+                  />
                 </div>
                 <div className={`col-span-9 ${styles.content_title}`}>
                   <h3>Communication and Feedbacks</h3>
