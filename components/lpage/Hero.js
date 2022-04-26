@@ -36,7 +36,7 @@ export default function Content() {
       <div className="grid lg:grid-cols-3 gap-10 text-center">
         <div>
           <Image
-            src="/logo.svg"
+            src="/global-connection.svg"
             alt="Wakanda business Logo"
             width={272}
             height={56}
@@ -47,7 +47,7 @@ export default function Content() {
         </div>
         <div>
           <Image
-            src="/logo.svg"
+            src="/sales.svg"
             alt="Wakanda business Logo"
             width={272}
             height={56}
@@ -58,7 +58,7 @@ export default function Content() {
         </div>
         <div>
           <Image
-            src="/logo.svg"
+            src="/email-marketing.svg"
             alt="Wakanda business Logo"
             width={272}
             height={56}

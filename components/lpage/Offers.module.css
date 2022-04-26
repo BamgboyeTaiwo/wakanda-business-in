@@ -3,13 +3,9 @@
     
 }
 .title{
-  font-size: large;
   width: fit-content;
   margin: 0 auto;
   border-bottom: 5px solid #00A85A;
-}
-.title_desp{
-  font-family: 'Raleway';
 }
 
  .businessheader{

@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "./Home.module.css";
 import React, { useState } from "react";
 import { Layout } from "../layout";
-import  Hero  from "../lpage/Hero"
+import Hero from "../lpage/Hero";
 import About from "../About/About";
 import Offers from "../lpage/Offers";
 import CustomerEmpowerment from "../lpage/customerEmpower";
@@ -27,14 +27,11 @@ export default function Home() {
           </Head>
 
           <main>
-            
-            {/* <Hero/> */}
+            <Hero />
             {/* <About/> */}
-            <Offers/>
-            <CustomerEmpowerment/>
-            <StaffMang/>
-
-
+            <Offers />
+            <CustomerEmpowerment />
+            <StaffMang />
           </main>
 
           {/* <footer className={styles.footer}>
