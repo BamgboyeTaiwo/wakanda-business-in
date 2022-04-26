@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from './staffManagement.module.css';
 
 export default function staffManagement() {
@@ -9,7 +10,7 @@ export default function staffManagement() {
 
             <div className={`grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12  ${styles}`}>
 
-                <div className='col-span-4 sm:col-span-12 md:col-span-4 lg:col-span-5'>
+                <div className='col-span-4 sm:col-span-12 md:col-span-6 lg:col-span-5'>
                     <h1 className={`text-[#00A85A] font-['Raleway'] text-bold sm:text-[15px] mb-4 lg:mb-5 ${styles.businessheader}`}>
                         STAFF MANAGEMENT
                        
@@ -18,7 +19,14 @@ export default function staffManagement() {
                     <div>
                         <div className='grid grid-cols-12 sm:mb-3 lg:mb-6'>
                             <div className='col-span-3 mx-2 '>
-                                <img src='/images/Group -10.png' alt="" />  
+                                <img className='sm:block md:hidden lg:hidden' src='/images/Group -10.png' alt="" /> 
+                                <Image
+                                    className={`sm:hidden ${styles.displaynone} `}
+                                    src="/communicate-icon.svg"
+                                    alt="Wakanda"
+                                    width={472}
+                                    height={356}
+                                /> 
                                 
                             </div>
                             <div className={`col-span-9 ${styles.content_title}`}>
@@ -41,7 +49,14 @@ export default function staffManagement() {
 
                         <div className='grid grid-cols-12  sm:mb-3 lg:mb-6'>
                             <div className='col-span-3 mx-2 '>
-                                <img src='/images/Group -9.png' alt="" />  
+                                <img className='sm:block md:hidden lg:hidden' src='/images/Group -9.png' alt="" />  
+                                <Image
+                                        className={`sm:hidden ${styles.displaynone} `}
+                                        src="/performance-icon.svg"
+                                        alt="Wakanda"
+                                        width={472}
+                                        height={356}
+                                    />
                                 
                             </div>
                             <div className={`col-span-9 ${styles.content_title}`}>
@@ -66,8 +81,31 @@ export default function staffManagement() {
                     </div>
 
                 </div>
-                <div className={`col-span-8 sm:col-span-12 md:col-span-8 lg:col-span-7 lg:pt-2 ${styles.flex2}`}>
-                        
+                <div className={` ${styles.div1} col-span-8 sm:col-span-12 md:col-span-6 lg:col-span-7 lg:pt-2 ${styles.flex2}`}>
+                    
+                    <Image
+                        className={`${styles.img1}`}
+                        src="/staff-management-phones.svg"
+                        alt="Wakanda"
+                        width={672}
+                        height={460}
+                        // width={250}
+                        // height={530}
+                    /> 
+
+                </div>
+                <div className={` ${styles.div2} col-span-8 sm:col-span-12 md:col-span-6 lg:col-span-7 lg:pt-2 ${styles.flex2}`}>
+                    
+                    <Image
+                        className={`${styles.img1}`}
+                        src="/staff-management-phones.svg"
+                        alt="Wakanda2"
+                        // width={572}
+                        // height={460}
+                        width={250}
+                        height={530}
+                    /> 
+
                 </div>
 
             </div>
