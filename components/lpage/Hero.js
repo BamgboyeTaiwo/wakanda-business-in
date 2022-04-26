@@ -1,69 +1,73 @@
+import Image from "next/image";
 import React from "react";
-import ContentStyles from "../lpage/Hero.module.css";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
 
 export default function Content() {
   return (
-    <>
-      <section>
-        <div
-          className={`${ContentStyles.jumbotron} ${ContentStyles.jumbotronfluid} ${ContentStyles.banner}`}
-          id={ContentStyles.banner}
-        >
-          <div
-            className={`${ContentStyles.container}  ${ContentStyles.herocontentdiv} ${ContentStyles.textcenter}`}
-          >
-            <div className={ContentStyles.herocontentdivh2}>
-              {/* <span>Manage Your Business without</span> */}
-              <p className={ContentStyles.Herotext}>Manage your Business</p>
-              <p className={ContentStyles.Herotext2}>Without Stress with Our</p>
-
-              <span className={ContentStyles.CustomHerotext}>CRM Solution</span>
-            </div>
-            <Button id={ContentStyles["btnn"]}>Get Started Now</Button>
+    <div className="container">
+      <div className="grid lg:grid-cols-2 gap-4 font-sans px-4 py-12">
+        <div className="flex">
+          <div className="self-center">
+            <h1 className="font-body leading-snug tracking-wide font-semibold text-[#163828] ">
+              Organise Your Sales.
+              <br /> Build Great Relationships. <br />
+              Save Time.
+            </h1>
+            <button class="rounded-md px-12 py-3 font-body tracking-wider text-white font-semibold mt-8 bg-[#02A85A] shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)]">
+              GET STARTED NOW &gt;
+            </button>
           </div>
         </div>
-      </section>
-
-      {/*-----------Header Bottom section------------ */}
-
-      <section>
-        <div className={ContentStyles.bottom}>
-          <Row className={ContentStyles.Row}>
-            <Col className={ContentStyles.bottomcol}>
-              <div className={ContentStyles.text1}>
-                <span className={ContentStyles.bottomspan}>
-                  Build deeper connections
-                </span>
-                <p className={ContentStyles.bottomP}>
-                  with your cutsomers with ease
-                </p>
-              </div>
-            </Col>
-            <Col className={ContentStyles.bottomcol}>
-              <div className={ContentStyles.bottomtext2}>
-                <span className={ContentStyles.bottomspan}>
-                  Empower your customers
-                </span>
-
-                <p className={ContentStyles.bottomP}>
-                  to succeed with Wakanda Market App
-                </p>
-              </div>
-            </Col>
-            <Col className={ContentStyles.bottomcollast}>
-              <div className={ContentStyles.bottomtext3}>
-                <span className={ContentStyles.bottomspan}>
-                  Manage your staff and business
-                </span>
-                <p className={ContentStyles.bottomP}>processes without sweat</p>
-              </div>
-            </Col>
-          </Row>
+        <div className="flex ">
+          <div className="self-start">
+            <Image
+              src="/Home_Image.svg"
+              alt="Header Image"
+              width={472}
+              height={560}
+            />
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+      <div>
+        <h2 className="font-body text-center pb-12 leading-snug tracking-wide font-semibold text-[#163828]">
+          How can Wakanda CRM help You Grow your Business?
+        </h2>
+      </div>
+      <div className="grid lg:grid-cols-3 gap-10 text-center">
+        <div>
+          <Image
+            src="/logo.svg"
+            alt="Wakanda business Logo"
+            width={272}
+            height={56}
+          />
+          <p className="text-sm p-2 font-body font-semibold text-[#163828]">
+            Build deeper connections with <br /> your customers with ease.
+          </p>
+        </div>
+        <div>
+          <Image
+            src="/logo.svg"
+            alt="Wakanda business Logo"
+            width={272}
+            height={56}
+          />
+          <p className="text-sm p-2 font-body font-semibold text-[#163828]">
+            Manage your sales process.
+          </p>
+        </div>
+        <div>
+          <Image
+            src="/logo.svg"
+            alt="Wakanda business Logo"
+            width={272}
+            height={56}
+          />
+          <p className="text-sm p-2 font-body font-semibold text-[#163828]">
+            Automate your everyday <br /> task and save time.
+          </p>
+        </div>
+      </div>
+    </div>
   );
 }

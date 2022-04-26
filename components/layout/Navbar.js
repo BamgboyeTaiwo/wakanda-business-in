@@ -9,11 +9,16 @@ import Button from "react-bootstrap/Button";
 export default function NavBar() {
   return (
     <>
-      <div className={HeaderStyles.Header}>
+      <div className="shadow-lg">
         <Navbar className={HeaderStyles.Navbar} collapseOnSelect expand="sm">
           {/* <Container className={HeaderStyles.Header}> */}
           <Navbar.Brand href="#home" className={HeaderStyles.brandd}>
-            <Image src="/logo.svg" alt="Vercel Logo" width={272} height={56} />
+            <Image
+              src="/logo.svg"
+              alt="Wakanda business Logo"
+              width={272}
+              height={56}
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse
