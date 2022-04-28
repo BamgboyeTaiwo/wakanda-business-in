@@ -9,6 +9,7 @@ import About from "../About/About";
 import Offers from "../lpage/Offers";
 import CustomerEmpowerment from "../lpage/customerEmpower";
 import StaffMang from "../lpage/staffManagement";
+import Footer from "../lpage/footer";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
             <CustomerEmpowerment />
             <StaffMang />
           </main>
+          <Footer/>
 
           {/* <footer className={styles.footer}>
             <a>Footer here... </a>
