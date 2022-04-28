@@ -113,7 +113,7 @@
   .messages{
     width: 40%;
     top: 545px;
-    left: 5%
+    left: 5%;
 
   }
   .layer_x{
@@ -247,6 +247,7 @@
     width: 30%;
     top: 60%;
     left: 5%;
+    z-index: 5;
   }
   .customerpng{
     width: 45%;
@@ -289,6 +290,7 @@
     width: 30%;
     top: 78%;
     left: 5%;
+    z-index: 5;
   }
   .group928{
     position: absolute;
