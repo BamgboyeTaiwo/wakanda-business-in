@@ -1,52 +1,35 @@
 import React from "react";
-import Image from 'next/image';
+import Image from "next/image";
 import styles from "./customerEmpower.module.css";
 
 export default function customerEmpower() {
   return (
-    <section className="bg-[#EFF7F0] pt-4 text-[#163828] font-['Raleway'] ">
-      <div className={`container px-3 ${styles.containerst}`}>
+    <section className="bg-[#EFF7F0] text-[#163828] font-['Raleway'] ">
+      <div className={``}>
         <div
-          className={`grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12  ${styles}`}
+          className={`grid   grid-cols-12 sm:grid-cols-12 gap-0 lg:gap-14 md:grid-cols-12 lg:grid-cols-12 `}
         >
           <div
-            className={` sm:hidden md:block lg:block col-span-8 sm:col-span-12 md:col-span-7 lg:col-span-7 lg:pt-2 ${styles.flex2}`}
+            className={` sm:hidden md:block lg:block col-span-8 sm:col-span-12 md:col-span-7 lg:col-span-7 lg:pt-2`}
           >
-            <div className={`wrapper lg:mt-[10px] ${styles.wrapper}`}>
-              <img
-                src="/images/Group 933.png"
-                className={`absolute ${styles.group933}`}
-                alt=""
-              />
-              <img
-                src="/images/Group 842.png"
-                className={`absolute ${styles.group842}`}
-                alt=""
-              />
-              <img
-                src="/images/Component 62.png"
-                className={`absolute ${styles.messagespng}`}
-                alt=""
-              />
-              <img
-                src="/images/Layer_x-1.png"
-                className={`absolute ${styles.layer_x}`}
-                alt=""
+            <div>
+              <Image
+                src="/customer.svg"
+                width="1326"
+                height="1297"
+                layout="responsive"
               />
             </div>
           </div>
 
-          <div
-            className={`col-span-4 sm:col-span-12 md:col-span-5 lg:col-span-5 ${styles.flexbox}`}
-          >
+          <div className="col-span-4 sm:col-span-12 md:col-span-6 lg:col-span-5">
             <h1
-              className={`text-[#00A85A] font-['Raleway'] text-bold sm:text-[15px] mb-4 lg:mb-5 ${styles.businessheader}`}
+              className={`text-[#00A85A] font-['Raleway'] text-center ml-24 lg:ml-12 text-bold sm:text-[15px] mb-4 lg:mb-5 ${styles.businessheader}`}
             >
               CUSTOMER EMPOWERMENT
-              
             </h1>
-            <div className={styles.cols}>
-              <div className="grid grid-cols-12 sm:mb-3 lg:mb-3 md:mb-1">
+            <div className="lg:mr-28 sm:mr-2">
+              <div className="grid grid-cols-12 sm:mb-3 lg:mb-3 md:mb-1  ">
                 <div className="col-span-3 mx-2 ">
                   {/* <img src="/images/Group -8.png" alt="" /> */}
                   <Image
@@ -54,11 +37,15 @@ export default function customerEmpower() {
                     alt="Wakanda"
                     width={472}
                     height={356}
+                    placeholder="blur"
+                    blurDataURL="/Help customer.svg"
                   />
                 </div>
-                <div className={`col-span-9 ${styles.content_title}`}>
-                  <h3 className="">Help your customers succeeds</h3>
-                  <p>
+                <div className={`col-span-9`}>
+                  <h3 className="text-lg font-semibold">
+                    Help your customers succeeds
+                  </h3>
+                  <p className="text-normal tracking-wider leading-7">
                     You customer can also gain access to the Wakanda Market App
                     to sell their products and services and also receive free
                     consultation from the BabaOja Wisdom Series.
@@ -69,16 +56,16 @@ export default function customerEmpower() {
 
               <div className="grid grid-cols-12  sm:mb-3 md:mb-1 lg:mb-3">
                 <div className="col-span-3 mx-2 ">
-                <Image
+                  <Image
                     src="/performance-icon.svg"
                     alt="Wakanda"
                     width={472}
                     height={356}
                   />
                 </div>
-                <div className={`col-span-9 ${styles.content_title}`}>
-                  <h3>Performance Report</h3>
-                  <p>
+                <div className={`col-span-9`}>
+                  <h3 className="text-lg font-semibold">Performance Report</h3>
+                  <p className="text-normal tracking-wider leading-7">
                     As your business is growing and evolving, Wakanda CRM tracks
                     the progress and provide real time reports on your business
                     performance.
@@ -95,9 +82,11 @@ export default function customerEmpower() {
                     height={356}
                   />
                 </div>
-                <div className={`col-span-9 ${styles.content_title}`}>
-                  <h3>Free! and Easy to Use</h3>
-                  <p>
+                <div className={`col-span-9`}>
+                  <h3 className="text-lg font-semibold">
+                    Free! and Easy to Use
+                  </h3>
+                  <p className="text-normal tracking-wider leading-7">
                     Wakanda is free for both your online and offline customers,
                     through the Wakanda App and SMS alerts
                   </p>
@@ -106,16 +95,18 @@ export default function customerEmpower() {
 
               <div className="grid grid-cols-12  sm:mb-3 md:mb-1 lg:mb-6">
                 <div className="col-span-3 mx-2 ">
-                <Image
+                  <Image
                     src="/communicate-icon.svg"
                     alt="Wakanda"
                     width={472}
                     height={356}
                   />
                 </div>
-                <div className={`col-span-9 ${styles.content_title}`}>
-                  <h3>Communication and Feedbacks</h3>
-                  <p>
+                <div className={`col-span-9`}>
+                  <h3 className="text-lg font-semibold">
+                    Communication and Feedbacks
+                  </h3>
+                  <p className="text-normal tracking-wider leading-7">
                     Your customers can communicate with you and also provide
                     their honest feedbacks towards your business with the
                     anonymous voice feature.
@@ -125,7 +116,7 @@ export default function customerEmpower() {
 
               <div className="grid grid-cols-12  sm:mb-3 lg:mb-6">
                 <button
-                  className={`col-start-3 col-span-7 bg-[#00A85A] md:col-span-8 md:col-start-3 md:py-1 md:px-1 ${styles.btn} text-white font-bold  py-3 px-4 rounded`}
+                  className={`col-start-3 col-span-7 ml-12 bg-[#00A85A] md:col-span-8 md:col-start-3 md:py-1 md:px-1 text-white shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] font-semibold  py-3 px- rounded`}
                 >
                   GET STARTED NOW {">"}
                 </button>
@@ -135,7 +126,7 @@ export default function customerEmpower() {
 
           {/* only display when small */}
 
-          <div
+          {/* <div
             className={`col-span-8 sm:col-span-12 sm:block md:hidden lg:hidden   md:col-span-7 lg:col-span-7 lg:pt-2 ${styles.flex2}`}
           >
             <div className={`wrapper lg:mt-[10px] ${styles.wrapper}`}>
@@ -160,7 +151,7 @@ export default function customerEmpower() {
                 alt=""
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

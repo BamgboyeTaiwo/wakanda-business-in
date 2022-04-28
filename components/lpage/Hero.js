@@ -12,7 +12,7 @@ export default function Content() {
               <br /> Build Great Relationships. <br />
               Save Time.
             </h1>
-            <button class="rounded-md px-12 py-3 font-body tracking-wider text-white font-semibold mt-8 bg-[#02A85A] shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)]">
+            <button className="rounded-md px-8 py-3 font-body tracking-wider text-white font-semibold mt-8 bg-[#02A85A] shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)]">
               GET STARTED NOW &gt;
             </button>
           </div>
@@ -22,6 +22,8 @@ export default function Content() {
             <Image
               src="/Home_Image.svg"
               alt="Header Image"
+              placeholder="blur"
+              blurDataURL="/Home_Image.svg"
               width={472}
               height={560}
             />
@@ -38,8 +40,9 @@ export default function Content() {
           <Image
             src="/global-connection.svg"
             alt="Wakanda business Logo"
-            width={272}
-            height={56}
+            width={544}
+            height={112}
+            layout="responsive"
           />
           <p className="text-sm p-2 font-body font-semibold text-[#163828]">
             Build deeper connections with <br /> your customers with ease.
@@ -49,8 +52,8 @@ export default function Content() {
           <Image
             src="/sales.svg"
             alt="Wakanda business Logo"
-            width={272}
-            height={56}
+            width={544}
+            height={112}
           />
           <p className="text-sm p-2 font-body font-semibold text-[#163828]">
             Manage your sales process.
@@ -59,9 +62,9 @@ export default function Content() {
         <div>
           <Image
             src="/email-marketing.svg"
-            alt="Wakanda business Logo"
-            width={272}
-            height={56}
+            alt="email-marketing"
+            width={544}
+            height={112}
           />
           <p className="text-sm p-2 font-body font-semibold text-[#163828]">
             Automate your everyday <br /> task and save time.
