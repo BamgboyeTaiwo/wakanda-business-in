@@ -1,7 +1,6 @@
 import Image from "next/image";
 import HeaderStyles from "./Navbar.module.css";
 import Logo from "../../public/Group1.png";
-// import Logo from "../../public/Assets/Group313";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
@@ -27,19 +26,19 @@ export default function NavBar() {
           >
             <Nav className={HeaderStyles.innernavdiv}>
               <Nav.Link
-                href="#deets"
+                href="#Features"
                 className={`${HeaderStyles.marginsides} ${HeaderStyles.navlink} ${HeaderStyles.navadjust}`}
               >
-                About Us
+                Features
                 {/* <hr className={HeaderStyles.active}></hr> */}
               </Nav.Link>
-              <Nav.Link
+              {/* <Nav.Link
                 eventKey={2}
                 href="#memes"
                 className={`${HeaderStyles.marginsides} ${HeaderStyles.navlink} ${HeaderStyles.navadjust}`}
               >
                 Our Offers
-              </Nav.Link>
+              </Nav.Link> */}
               <Nav.Link
                 href="##"
                 className={`${HeaderStyles.marginsides} ${HeaderStyles.navlink}`}
@@ -69,7 +68,7 @@ export default function NavBar() {
               <Button
                 className={`${HeaderStyles.signup} ${HeaderStyles.marginsides} ${HeaderStyles.buttonresize}`}
               >
-                SIGN UP
+                GET STARTED
               </Button>
             </Nav>
           </Navbar.Collapse>
