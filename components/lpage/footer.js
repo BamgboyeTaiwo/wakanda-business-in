@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; 
 import Image from 'next/image';
 import Link from 'next/link'
 import styles from './footer.module.css'
@@ -80,7 +80,9 @@ export default function footer() {
         <div className={` lg:h-[70vh] ${styles.footer_content}`}>
             <div className={`flex flex-row-12 p-2 mb-2 w-100 sm:block md:flex lg:flex lg:pt-[15% !important] ${styles.foot_detail_container} sm:pt-[45% !important] `}>
 
-                <div className={` ${styles.logo} col-span-3 sm:hidden md:block lg:block sm:row-span-12 sm:col-span-12 sm:w-100 lg:col-span-3 md:col-span-3 w-25 `}>
+                <div className={` 
+                ${styles.logo} col-span-3 sm:hidden md:block lg:block sm:row-span-12 sm:col-span-12 sm:w-100 lg:col-span-3 md:col-span-3 w-25 sm:pl-[5%]
+                `}>
                 <Image
                     className={` ${styles.logo_img}`}
                     src="/Group-706.svg"
@@ -174,7 +176,7 @@ export default function footer() {
                                 <div className={` ${styles.contact_div2}`}>
                                 <span className='mr-2'>
                                         <Image
-                                            src="/call.svg"
+                                            src="/mail-outline.svg"
                                             alt="Wakanda"
                                             width={30}
                                             height={15}
@@ -184,7 +186,7 @@ export default function footer() {
                                     <span>
                                         <span>Christian@african-founders.com</span>
                                          <br/>
-                                         <span className='lg:ml-[2.5rem] sm:ml-[2.5rem] '>abiodun@african-funders.com</span>
+                                         <span className='lg:ml-[2.5rem] sm:ml-[2.5rem] '>abiodun@african-founders.com</span>
                                         
                                     </span>
                                 </div> 
@@ -203,31 +205,44 @@ export default function footer() {
                                     </span>
                                     
                                 </div>
-                                <div className={` ${styles.contact_div4} sm:mt-2 lg:mt-5`}>
+                                <div className={` ${styles.contact_div4} sm:mt-5 lg:mt-5  lg:mb-[100px]` }>
                                 <span className='mr-2'>
                                         <Image
-                                            src="/call.svg"
+                                            src="/Facebook.svg"
                                             alt="Wakanda"
-                                            width={30}
-                                            height={15}
+                                            width={60}
+                                            height={30}
                                         />
 
                                     </span>
                                     <span className='mr-2'>
                                         <Image
-                                            src="/location-2.svg"
+                                            className={`m-none`}
+                                            src="/instgram.svg"
                                             alt="Wakanda"
-                                            width={30}
-                                            height={15}
+                                            width={60}
+                                            height={30}
+                                            
+                                            
+                                            // width={10}
+                                            // height={15}
+                                             
                                         />
+                                        {/* <Image
+                                            className={``}
+                                            src="/instgram.svg"
+                                            alt="Wakanda"
+                                            width={50}
+                                            height={25}
+                                        /> */}
 
                                     </span>
                                     <span className='mr-2'>
                                         <Image
-                                            src="/call.svg"
+                                            src="/Twitter.svg"
                                             alt="Wakanda"
-                                            width={30}
-                                            height={15}
+                                            width={60}
+                                            height={30}
                                         />
 
                                     </span>

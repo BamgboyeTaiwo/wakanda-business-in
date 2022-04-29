@@ -1,0 +1,75 @@
+.book_img{
+
+}
+
+
+@media (min-width: 767px) and (max-width:991px) {
+
+    .Img_container{
+        padding: 80px !important;
+        width: fit-content;
+    }
+    .book_img{
+        width: 100%;
+        padding: 20px !important;
+    }
+}
+
+@media (min-width: 767px) and (max-width:1400px) {
+
+    .Img_container{
+        padding: 80px !important;
+        width: fit-content;
+    }
+    .book_img{
+        width: 100%;
+        padding: 20px !important;
+    }
+    .content_div{
+        
+        width: 50vw;
+        height: fit-content;
+        position: relative;
+        left: -5%;
+        padding: 10px;
+        margin-top: 100px;
+    }
+    
+}
+@media (min-width: 320px) and (max-width:568px) {
+
+    .content_div{
+        
+        width: 80%;
+        margin: 0 auto;
+        height: fit-content;
+        position: relative;
+        left: 0 !important;
+        padding: 10px;
+        margin-top: 0 !important;
+    }
+    .helper_div{
+        height: 0.1vh !important;
+    }
+}
+@media (min-width: 568px) and (max-width:767px) {
+
+    .Img_container{
+        padding: 80px !important;
+        width: fit-content;
+    }
+    .book_img{
+        width: 100%;
+        padding: 20px !important;
+    }
+    .content_div{
+        
+        width: 50vw;
+        height: fit-content;
+        position: relative;
+        left: -5%;
+        padding: 10px;
+        margin-top: 100px;
+    }
+
+}
