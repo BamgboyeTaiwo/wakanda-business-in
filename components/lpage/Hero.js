@@ -24,8 +24,10 @@ export default function Content() {
               alt="Header Image"
               placeholder="blur"
               blurDataURL="/Home_Image.svg"
+              quality={75}
               width={472}
               height={560}
+              loading="lazy"
             />
           </div>
         </div>
