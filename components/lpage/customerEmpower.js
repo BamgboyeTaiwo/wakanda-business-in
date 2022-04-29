@@ -126,6 +126,20 @@ export default function customerEmpower() {
 
           {/* only display when small */}
 
+
+          <div
+            className={` sm:block md:hidden lg:hidden col-span-8 sm:col-span-12 md:col-span-7 lg:col-span-7 lg:pt-2`}
+          >
+            <div>
+              <Image
+                src="/customer.svg"
+                width="1326"
+                height="1297"
+                layout="responsive"
+              />
+            </div>
+          </div>
+
           {/* <div
             className={`col-span-8 sm:col-span-12 sm:block md:hidden lg:hidden   md:col-span-7 lg:col-span-7 lg:pt-2 ${styles.flex2}`}
           >

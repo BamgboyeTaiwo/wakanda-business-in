@@ -86,9 +86,13 @@ export default function staffManagement() {
           >
             <Image
               src="/staff-management-phones.svg"
-              alt="Wakanda"
-              width={872}
-              height={760}
+              alt="Wakanda_staff_management"
+              // width={872}
+              // height={760}
+              width="1326"
+              height="1297"
+              layout="responsive"
+              
 
               // width={250}
               // height={530}
