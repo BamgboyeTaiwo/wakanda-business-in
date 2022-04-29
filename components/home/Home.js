@@ -10,6 +10,7 @@ import Offers from "../lpage/Offers";
 import CustomerEmpowerment from "../lpage/customerEmpower";
 import StaffMang from "../lpage/staffManagement";
 import Footer from "../lpage/footer";
+import Ebook from "../lpage/ebook";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
             <Offers />
             <CustomerEmpowerment />
             <StaffMang />
+            <Ebook/>
           </main>
           <Footer/>
 
