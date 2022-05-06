@@ -2,20 +2,22 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link'
 import styles from './footer.module.css'
+import About from '../About/About';
+
 
 export default function footer() {
   return (
 
     <footer className={` relative bg-[#00A85A] ${styles.footer} text-body `} id='Footer'>
 
-        <div className={` bg-[#C1DE76]  lg:flex sm:w-[90%] ${styles.Get_container}`}>
+        <div className={` bg-[#C1DE76]   lg:flex sm:w-[90%] ${styles.Get_container}`}>
 
             <div className={` sm:block md:flex lg:flex m-auto sm:w-[80%] sm:p-[5px]`} >
-                <div className={` ${styles.Get_container_textbox} sm:w-100`}>
-                    <h4 className={`text-bold ${styles.Get_title}`} >
+                <div className={` ${styles.Get_container_textbox} sm:w-100 font-body`}>
+                    <h4 className={`font-black ${styles.Get_title} text-[62px]`} >
                         Get the <br className='lg:hidden md:hidden'/>  Wakanda App
                     </h4>
-                    <p className='lg:text-[10px] md:text-[10px] sm:text-[15px]  '>
+                    <p className='lg:text-[10px] text-[#333333] md:text-[10px] tracking-[0.66px] sm:text-[15px]  '>
                         Enjoy alot more awesome <br className='lg:hidden md:hidden'/>
                          features on the Wakanda <br className='lg:hidden md:hidden'/>
                          Mobile App
@@ -70,13 +72,9 @@ export default function footer() {
             </div>
 
             
-
-
-
-
         </div>
 
-
+        {/* xxlg:h-[100vh!important] xxlg:bg-[red!important] */}
         <div className={` lg:h-[70vh] ${styles.footer_content}`}>
             <div className={`flex flex-row-12 p-2 mb-2 w-100 sm:block md:flex lg:flex lg:pt-[15% !important] ${styles.foot_detail_container} sm:pt-[45% !important] `}>
 
@@ -102,7 +100,7 @@ export default function footer() {
 
                 </div>
 
-                <div className={`col-span-4 sm:col-span-12 w-35 sm:block ${styles.div_two}` }>
+                <div className={`col-span-4 sm:col-span-12 w-35 sm:block tracking-[0.77px] ${styles.div_two}` }>
                     <div className={`grid grid-row-5 ${styles.navlink_container}`}>
                         <div className='row-span-1 p-2 '>
 
@@ -113,7 +111,7 @@ export default function footer() {
                         </div>
                         <div className='row-span-1 p-2 '>
                             
-                            <Link href={'#'}>
+                            <Link href={'./About'}> 
                                 <a href="" className={` ${styles.text_link} `}> About Us</a>
                                 
                             </Link>
@@ -148,17 +146,17 @@ export default function footer() {
                     </div>
 
                 </div>
-                <div className={`col-span-5 w-40 ${styles.div_three}` }>
-                <div className=' lg:mt-[10px]'>
+                <div className={`col-span-5 w-40 tracking-[0.77px] leading-[2rem]  ${styles.div_three}` }>
+                <div className={` lg:mt-[10px] xxlg:w-[fit-content] xxlg:ml-auto xxlg:mr-6 ${styles.contact_main_div}`}>
                     <div>
                         <h6 className={styles.contact_header}> CONTACTS: </h6>
                     </div>
                     
 
-                        <div className='flex flex-col text-white'>
+                        <div className='flex flex-col text-white  '>
 
                             
-                                <div className={` ${styles.contact_div1}`}>
+                                <div className={` ${styles.contact_div1} `}>
                                     <span className='mr-2'>
                                         <Image
                                             src="/location-2.svg"
@@ -220,7 +218,7 @@ export default function footer() {
                                             className={`m-none`}
                                             src="/instgram.svg"
                                             alt="Wakanda"
-                                            width={60}
+                                            width={60}  
                                             height={30}
                                             
                                             
@@ -270,7 +268,7 @@ export default function footer() {
                             <span className='my-7'>Made with  
                 <span>
                 <Image
-                    src="/location-2.svg"
+                    src="/Red Heart.svg"
                     alt="Wakanda"
                     width={30}
                     height={15}
