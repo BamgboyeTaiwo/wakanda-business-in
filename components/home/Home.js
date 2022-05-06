@@ -12,6 +12,7 @@ import StaffMang from "../lpage/staffManagement";
 import Footer from "../lpage/footer";
 import Ebook from "../lpage/ebook";
 
+
 export default function Home() {
   return (
     <div>
@@ -35,8 +36,9 @@ export default function Home() {
             <CustomerEmpowerment />
             <StaffMang />
             <Ebook/>
+
           </main>
-          <Footer/>
+          <Footer />
 
           {/* <footer className={styles.footer}>
             <a>Footer here... </a>

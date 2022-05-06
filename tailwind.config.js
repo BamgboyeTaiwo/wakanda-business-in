@@ -10,6 +10,8 @@ module.exports = {
       'md':'567px',
 
       'lg': '768px',
+      
+      "xxlg":'1200px',
 
     },
     extend: {},
