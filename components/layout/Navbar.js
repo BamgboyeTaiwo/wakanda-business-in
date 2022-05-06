@@ -4,7 +4,7 @@ import Logo from "../../public/Group1.png";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
-
+import Link from "next/link";
 
 export default function NavBar() {
   return (
@@ -12,14 +12,16 @@ export default function NavBar() {
       <div className="shadow-lg">
         <Navbar className={HeaderStyles.Navbar} collapseOnSelect expand="sm">
           {/* <Container className={HeaderStyles.Header}> */}
-          <Navbar.Brand href="#home" className={HeaderStyles.brandd}>
-            <Image
-              src="/logo.svg"
-              alt="Wakanda business Logo"
-              width={272}
-              height={56}
-            />
-          </Navbar.Brand>
+          <Link href="/">
+            <Navbar.Brand href="#home" className={HeaderStyles.brandd}>
+              <Image
+                src="/logo.svg"
+                alt="Wakanda business Logo"
+                width={272}
+                height={56}
+              />
+            </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse
             id="responsive-navbar-nav"

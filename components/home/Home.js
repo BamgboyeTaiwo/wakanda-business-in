@@ -39,10 +39,6 @@ export default function Home() {
             <Ebook />
           </main>
           <Footer />
-
-          {/* <footer className={styles.footer}>
-            <a>Footer here... </a>
-          </footer> */}
         </div>
       </Layout>
     </div>

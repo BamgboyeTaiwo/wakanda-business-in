@@ -4,7 +4,7 @@ import styles from "./ebook.module.css";
 
 export default function Pricing() {
   return (
-    <section>
+    <>
       <div className="flex flex-col justify-center items-center">
         <h1 className="font-body border-green-600 border-b-8 mt-12 font-semibold text-center p-2 ">
           Pricing
@@ -12,13 +12,13 @@ export default function Pricing() {
       </div>
 
       <div class=" md:px-20  rounded border-b border-gray-200">
-        <table class=" table-auto text-center flex flex-col justify-center items-center overflow-scroll md:mx-32 my-16 py-12 rounded-2xl shadow-2xl shadow-[#18A75D26]">
+        <table class=" table-auto text-center flex flex-col justify-center items-center overflow-scroll md:mx-32 my-16 py-12 rounded-2xl shadow-3xl shadow-[#18A75D26]">
           <thead>
             <tr>
-              <th className="font-body px-32 font-semibold border-black border-b-8 ">
+              <th className="font-body px-10  font-semibold border-black border-b-8 ">
                 BENEFITS
               </th>
-              <th className="px-8 border-[#EA66E0] border-b-8 ">
+              <th className=" border-[#EA66E0] px-16 border-b-8 ">
                 <p className="text-[#EA66E0] text-center">STARTER</p>
                 <h1 className="font-body font-semibold text-center">FREE!</h1>
                 <p className="font-normal text-[#87AC9B] text-center">
@@ -28,7 +28,7 @@ export default function Pricing() {
                   GET STARTED
                 </button>
               </th>
-              <th className="px-8 border-[#F46E56] border-b-8 ">
+              <th className="px-10 border-[#F46E56] border-b-8 ">
                 <p className="text-[#F46E56] text-center">PROFESSIONAL</p>
                 <h1 className="font-body font-semibold text-center">N50K</h1>
                 <p className="font-normal text-[#87AC9B] text-center">
@@ -39,7 +39,7 @@ export default function Pricing() {
                   GET STARTED
                 </button>
               </th>
-              <th className="px-8 border-[#4160E0] border-b-8 ">
+              <th className="px-12 border-[#4160E0] border-b-8 ">
                 <p className="text-[#4160E0] text-center"> ENTERPRISE</p>
                 <h1 className="font-body font-semibold text-center">N500K</h1>
                 <p className="font-normal text-[#87AC9B] text-center">
@@ -51,18 +51,18 @@ export default function Pricing() {
               </th>
             </tr>
           </thead>
-          <tbody>
-            <tr className="font-body bg-[#EFF7F0]">
-              <td className="font-semibold px-32">SMS</td>
-              <td>50NGN/SMS</td>
-              <td>
+          <tbody className="">
+            <tr className="font-body  bg-[#EFF7F0]">
+              <td className="font-semibold w-1/6 pt-2">SMS</td>
+              <td className="w-1/6 pt-2">50NGN/SMS</td>
+              <td className="w-2/6 pt-2">
                 <p className="text-center">
                   <span className="font-semibold">500 Customized SMS</span>{" "}
                   <br />
                   Extendable @ 40 NGN /SMS
                 </p>
               </td>
-              <td className="text-center ">
+              <td className="text-center w-2/6 pt-2 ">
                 <p className="text-center">
                   <span className="font-semibold">5000 Customized SMS</span>{" "}
                   <br />
@@ -135,13 +135,11 @@ export default function Pricing() {
             </tr>
             <tr className="bg-[#EFF7F0] font-body">
               <td class=" text-center py-3 px-4 font-semibold ">REPORTS</td>
-              <td class=" text-center py-3 px-4">
-                <p>X</p>
-              </td>
-              <td class="text-center">
+              <td class=" text-center font-semibold text-red-500 ">X</td>
+              <td class="text-center pt-3">
                 <p> Customized Reports</p>
               </td>
-              <td class="text-center ">
+              <td class="text-center pt-2 ">
                 <p>
                   <span className="font-semibold">Extra</span> <br />
                   Customized Reports
@@ -152,68 +150,94 @@ export default function Pricing() {
               <td class=" text-center py-3  font-semibold ">
                 ROLE-BASED ACCESS
               </td>
-              <td class=" text-center">
-                <p>X</p>
-              </td>
+              <td class=" text-center font-semibold text-red-500">X</td>
               <td class="text-center">
-                <p> CHECKMARK</p>
+                <Image
+                  src="/checkmark-round.svg"
+                  alt="Wakanda"
+                  width={72}
+                  height={16}
+                />
               </td>
               <td class="text-center ">
-                <p>CHECKMARK</p>
+                <Image
+                  src="/checkmark-round.svg"
+                  alt="Wakanda"
+                  width={72}
+                  height={16}
+                />
               </td>
             </tr>
             <tr className="bg-[#EFF7F0] font-body">
               <td class=" text-center py-3  font-semibold ">
                 CSV CUSTOMER IMPORT
               </td>
-              <td class=" text-center">
-                <p>X</p>
-              </td>
+              <td class="text-center font-semibold text-red-500">X</td>
               <td class="text-center">
-                <p> CHECKMARK</p>
+                <Image
+                  src="/checkmark-round.svg"
+                  alt="Wakanda"
+                  width={72}
+                  height={16}
+                />
               </td>
               <td class="text-center ">
-                <p>CHECKMARK</p>
+                <Image
+                  src="/checkmark-round.svg"
+                  alt="Wakanda"
+                  width={72}
+                  height={16}
+                />
               </td>
             </tr>
             <tr className="bg-[#FFFFFF] font-body">
               <td class=" text-center py-3  font-semibold ">WEB COCKPIT</td>
-              <td class=" text-center">
-                <p>X</p>
-              </td>
+              <td class=" text-center font-semibold text-red-500">X</td>
               <td class="text-center">
-                <p> CHECKMARK</p>
+                <Image
+                  src="/checkmark-round.svg"
+                  alt="Wakanda"
+                  width={72}
+                  height={16}
+                />
               </td>
               <td class="text-center ">
-                <p>CHECKMARK</p>
+                <Image
+                  src="/checkmark-round.svg"
+                  alt="Wakanda"
+                  width={72}
+                  height={16}
+                />
               </td>
             </tr>
             <tr className="bg-[#EFF7F0] font-body">
               <td class=" text-center py-3  font-semibold ">
                 END-TO-END ENCRYPTION
               </td>
-              <td class=" text-center">
-                <p>X</p>
-              </td>
-              <td class="text-center">
-                <p>X</p>
-              </td>
+              <td class=" text-center font-semibold text-red-500">X</td>
+              <td class="text-center font-semibold text-red-500">X</td>
               <td class="text-center ">
-                <p>CHECKMARK</p>
+                <Image
+                  src="/checkmark-round.svg"
+                  alt="Wakanda"
+                  width={72}
+                  height={16}
+                />
               </td>
             </tr>
             <tr className="bg-[#FFFFFF] font-body">
               <td class=" text-center py-3  font-semibold ">
                 WHITE-LABEL APP (NEGOTIABLE)
               </td>
-              <td class=" text-center">
-                <p>X</p>
-              </td>
-              <td class="text-center">
-                <p>X</p>
-              </td>
+              <td class=" text-center font-semibold text-red-500">X</td>
+              <td class="text-center font-semibold text-red-500">X</td>
               <td class="text-center ">
-                <p>CHECKMARK</p>
+                <Image
+                  src="/checkmark-round.svg"
+                  alt="Wakanda"
+                  width={72}
+                  height={16}
+                />
               </td>
             </tr>
             <tr className="bg-[#FFFFFF] font-body">
@@ -239,6 +263,6 @@ export default function Pricing() {
           </tbody>
         </table>
       </div>
-    </section>
+    </>
   );
 }

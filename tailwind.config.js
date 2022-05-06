@@ -5,16 +5,19 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'sm': '320px',
+      sm: "320px",
 
-      'md':'567px',
+      md: "567px",
 
-      'lg': '768px',
-      
-      "xxlg":'1200px',
+      lg: "768px",
 
+      xxlg: "1200px",
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        "3xl": "0 35px 80px 15px rgba(0, 0, 0, 0.3)",
+      },
+    },
     fontFamily: {
       body: ["Raleway"],
     },
