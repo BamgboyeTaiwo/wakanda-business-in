@@ -11,6 +11,7 @@ import CustomerEmpowerment from "../lpage/customerEmpower";
 import StaffMang from "../lpage/staffManagement";
 import Footer from "../lpage/footer";
 import Ebook from "../lpage/ebook";
+import Pricing from "../lpage/pricing";
 
 export default function Home() {
   return (
@@ -34,9 +35,10 @@ export default function Home() {
             <Offers />
             <CustomerEmpowerment />
             <StaffMang />
-            <Ebook/>
+            <Pricing />
+            <Ebook />
           </main>
-          <Footer/>
+          <Footer />
 
           {/* <footer className={styles.footer}>
             <a>Footer here... </a>
