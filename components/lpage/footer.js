@@ -75,7 +75,7 @@ export default function footer() {
                 </Link>
               </div>
               <div className="row-span-1 p-2 ">
-                <Link href="/about">
+                <Link href="/About">
                   <a href="" className={` ${styles.text_link} `}>
                     {" "}
                     About Us
@@ -206,10 +206,10 @@ export default function footer() {
             Made with
             <span>
               <Image
-                src="/location-2.svg"
+                src="/Red Heart.svg"
                 alt="Wakanda"
-                width={30}
-                height={15}
+                width={25}
+                height={12}
               />
             </span>
             by African Founders{" "}

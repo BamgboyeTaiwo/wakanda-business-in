@@ -1,0 +1,93 @@
+.bonusheader{
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 5px solid #A9D046;
+    padding-bottom: 10px;
+  }
+
+.content{
+  position: relative;
+  left: 15%;
+}
+.button_div{
+  position: relative;
+  left: 15%;
+
+}
+.container{
+  box-shadow: 0px 30px 50px #18a75d26;;
+}
+
+
+@media (min-width: 767px) and (max-width: 991px) {
+
+  .content{
+    position: relative;
+    left: 10%;
+  }
+  .content h1{
+    font-size: 29px;
+  }
+  .button_div{
+    position: relative;
+    left: 10%;
+  }
+  .button_div > button {
+    border-radius: 10px !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 13px;
+  }
+  .container{
+    padding-bottom: 10px;
+  }
+  .img{
+    width: 500px;
+    height: 300px;
+  }
+
+}
+
+@media (min-width: 567px) and (max-width: 767px) {
+  .button_div{
+    position: relative;
+    left: 0%;
+  }
+  .content{
+    position: relative;
+    left: 5%;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 567px) {
+  .button_div{
+    position: relative;
+    left: 0%;
+  }
+  .content{
+    position: relative;
+    left: 6%;
+  }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .button_div > button{
+    /* padding: 10px !important; */
+    border-radius: 10px !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 13px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1400px) {
+  .img{
+    width: 500px;
+  }
+  .button_div > button{
+    border-radius: 10px !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 13px;
+  }
+
+}
