@@ -1,14 +1,11 @@
 import React from "react";
 import About from "../components/About/About";
-import Navbar from "../components/layout/Navbar";
-import Footer from "../components/lpage/footer";
+import { Layout } from "../components/layout";
 
 export default function AboutPage() {
   return (
-    <>
-      <Navbar />
+    <Layout>
       <About />
-      <Footer />
-    </>
+    </Layout>
   );
 }

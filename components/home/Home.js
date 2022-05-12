@@ -38,7 +38,6 @@ export default function Home() {
             <Pricing />
             <Ebook />
           </main>
-          <Footer />
         </div>
       </Layout>
     </div>

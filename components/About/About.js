@@ -47,10 +47,10 @@ export default function About() {
           <div className="mt-8">
             {/* <div className={styles.greenrect}></div> */}
             <Image
-              src="/about__us.svg"
+              src="/aboutus.png"
               alt="About Image"
               placeholder="blur"
-              blurDataURL="/about-us.svg"
+              blurDataURL="/aboutus.png"
               quality={75}
               width={572}
               height={440}
