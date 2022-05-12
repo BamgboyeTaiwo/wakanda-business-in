@@ -50,7 +50,7 @@ export default function NavBar() {
                 Pricing
               </Nav.Link>
               <Nav.Link
-                href="#pricing"
+                href="FAQs"
                 className={`${HeaderStyles.marginsides} ${HeaderStyles.navlink}`}
               >
                 FAQs

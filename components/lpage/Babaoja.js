@@ -5,73 +5,10 @@ import Image from "next/image";
 export default function Babaoja() {
   return (
     <>
-      <div className="container mt-3 mb-3 rounded bg-red-400 lg:flex shadow-[0_30px_50px_#18A75D26]">
-        <div className={`  ${styles.div_top}`}>
-          <div className={`flex  w-[fit-content]`}>
-            <div>
-              <Image
-                src="/Group 695.svg"
-                alt="About Image"
-                // placeholder="blur"
-                // blurDataURL="/about-us.svg"  box-shadow: 0px 30px 50px ;
-                // quality={75}
-                width={70}
-                height={70}
-                // width={472}
-                // height={356}
-                // loading="lazy"
-              />
-            </div>
-            <div className="my-auto">
-              <h1
-                className={`text-[#00A85A] font-body tracking-wider font-semibold sm:text-[15px]  ${styles.bonusheader}`}
-              >
-                BONUS
-              </h1>
-            </div>
-          </div>
 
-          <div
-            className={` text-[#163828] text-body tracking-[1.8px] ${styles.content}`}
-          >
-            <h1 className={styles.content_h1}>
-              Free! <br />
-              <span className="font-bold">Business Consultation</span>
-            </h1>
-            <span>
-              Plus free on-boarding training to help you get started smoothly.
-            </span>
-          </div>
-          <div className={`grid grid-cols-12 ${styles.button_div}`}>
-            {/* <button
-              className={` w-25 bg-[#00A85A] md:col-span-8 md:col-start-3 md:p-1 ml-8   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)]  py-3 px-4 rounded-md `}
-            >
-              GET STARTED NOW {">"}
-            </button> */}
-            <button
-              className={` bg-[#00A85A] col-span-6  text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
-            >
-              GET STARTED NOW {">"}
-            </button>
-          </div>
-          {/* <div className="grid grid-cols-3 w-25  sm:mb-3 lg:mb-6">
-
-            </div> */}
-        </div>
-        <div>
-          <Image
-            src="/BabaOja.svg"
-            alt="BabaOja Image"
-            // width={540}
-            height={600}
-            width={750}
-            // height={350}
-          />
-        </div>
-      </div>
 
       <div
-        className={`container mt-3 mb-3 rounded lg:flex ${styles.container}`}
+        className={`container mt-3 mb-3 lg:rounded-[1.5rem] lg:flex ${styles.container}`}
       >
         <div className={`  ${styles.div_top}`}>
           <div className={`flex  w-[fit-content]`}>
@@ -108,11 +45,12 @@ export default function Babaoja() {
               </span>
             </h1>
             <span className=" sm:font-[15px]">
-              Plus free on-boarding training to help you get started smoothly.
+              Plus free on-boarding training to <br className="sm:block md:block lg:hidden"/>
+              help you get started smoothly.
             </span>
           </div>
           <div
-            className={`grid grid-cols-12 ${styles.button_div} md:hidden lg:block sm:hidden`}
+            className={`grid grid-cols-12 ${styles.button_div} lg:mb-5 md:hidden lg:block sm:hidden`}
           >
             {/* <button
               className={` w-25 bg-[#00A85A] md:col-span-8 md:col-start-3 md:p-1 ml-8   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)]  py-3 px-4 rounded-md `}
@@ -120,16 +58,16 @@ export default function Babaoja() {
               GET STARTED NOW {">"}
             </button> */}
             <button
-              className={` bg-[#00A85A] col-span-6  text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
+              className={` bg-[#00A85A] col-span-8 w-[45%]  text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
             >
-              GET STARTED NOWW {">"}
+              GET STARTED NOW {">"}
             </button>
           </div>
           {/* <div className="grid grid-cols-3 w-25  sm:mb-3 lg:mb-6">
 
             </div> */}
         </div>
-        <div className={` ml-auto sm:mb-2 md:mb-3`}>
+        <div className={` ml-auto sm:mb-2 md:mb-3 lg:mb-0`}>
           <div>
             <img
               src="/Group 698.svg"

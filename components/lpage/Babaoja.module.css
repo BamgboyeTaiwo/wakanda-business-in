@@ -38,6 +38,13 @@
     padding-right: 0.5rem;
     font-size: 13px;
   }
+  .container{
+    padding-bottom: 10px;
+  }
+  .img{
+    width: 500px;
+    height: 300px;
+  }
 
 }
 
@@ -46,6 +53,11 @@
     position: relative;
     left: 0%;
   }
+  .content{
+    position: relative;
+    left: 5%;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 567px) {
@@ -57,4 +69,25 @@
     position: relative;
     left: 6%;
   }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+  .button_div > button{
+    /* padding: 10px !important; */
+    border-radius: 10px !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 13px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1400px) {
+  .img{
+    width: 500px;
+  }
+  .button_div > button{
+    border-radius: 10px !important;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 13px;
+  }
+
 }

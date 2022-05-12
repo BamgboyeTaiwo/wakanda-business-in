@@ -75,7 +75,7 @@ export default function footer() {
                 </Link>
               </div>
               <div className="row-span-1 p-2 ">
-                <Link href="/about">
+                <Link href="/About">
                   <a href="" className={` ${styles.text_link} `}>
                     {" "}
                     About Us
