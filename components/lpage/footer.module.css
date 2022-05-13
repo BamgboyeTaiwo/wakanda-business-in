@@ -1,53 +1,57 @@
-
-.link{
-    text-decoration:none !important;
+.link {
+    text-decoration: none !important;
     color: red;
 }
-.first_link{
-    color:#A9D046 !important;
+
+.first_link {
+    color: #A9D046 !important;
 }
 
 
 
-.text_link{
+.text_link {
     color: white;
-    text-decoration:none !important;
+    text-decoration: none !important;
 }
+
 .text_link:focus,
 .text_link:hover,
-.text_link:active{
+.text_link:active {
     color: #A9D046;
 }
- 
-.navlink_container{
+
+.navlink_container {
     width: fit-content !important;
 }
 
 
 /* ${styles.navlink_container} */
 
-.div_two{
+.div_two {
     width: 35% !important;
 }
-.div_three{
+
+.div_three {
     width: 40% !important;
 }
 
-.contact_header{
+.contact_header {
     color: #A9D046;
-    
+
 }
 
 .contact_div1,
 .contact_div2,
-.contact_div3
-{
+.contact_div3 {
     margin-bottom: 5px;
 }
+
 @media (min-width: 350px) and (max-width:567px) {
+
     .contact_div1,
     .contact_div2,
-    .contact_div3,.contact_div4{
+    .contact_div3,
+    .contact_div4 {
         margin-bottom: 15px;
         font-size: 19px !important;
     }
@@ -57,67 +61,71 @@
 
 @media (min-width: 280px) and (max-width:567px) {
 
-    .logo{
-        width: 100% !important ;
+    .logo {
+        width: 100% !important;
         max-width: 100% !important;
     }
 
-    .div_two{
+    .div_two {
         width: 100% !important;
         padding: 10px;
     }
 
-    .div_three{
+    .div_three {
         width: 100% !important;
         padding: 10px;
     }
-    
-    .contact_header{
+
+    .contact_header {
         color: #A9D046;
-        
+
     }
 
     .contact_div1,
     .contact_div2,
     .contact_div3,
-    .contact_div4
-    {
+    .contact_div4 {
         margin-bottom: 15px;
         font-size: 16px;
         /* font-size: calc(15px + (1.5rem - 1.0rem) * ((100vw - 320px) / ( 567px - 320px))); */
         /* font-size: calc(15px + 0.5rem * ((100vw - 320px) / 247 )); */
         /* font-size: calc(15px + (26 - 15) * ((100vw - 320px) / (567 - 320))); */
         /* font-size: calc(16px + 6 * ((100vw - 320px) / 680)); */
-        
+
         /* calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
     }
 
-    .Get_container{
-        width: 90% !important; 
+    .Get_container {
+        width: 90% !important;
         margin: 0 auto;
         position: absolute;
-        top: -20%; 
-        left: 5% !important; 
+        top: -20%;
+        left: 5% !important;
         border-radius: 15px;
         box-shadow: 0px 50px 60px #AACE5099;
     }
-    .Get_container_textbox{
+
+    .Get_container_textbox {
         height: fit-content;
         width: 100%;
-        margin: auto !important ;
+        margin: auto !important;
     }
-    .Get_title{
+
+    .Get_title {
         font-size: xx-large;
 
     }
-    .app_div{
+
+    .app_div {
         width: fit-content !important;
-        
+
     }
-    .foot_detail_container{
+
+    .foot_detail_container {
         padding-top: 45% !important;
     }
-    .contact_div4{
+
+    .contact_div4 {
         margin-bottom: 30px !important;
     }
 
@@ -125,7 +133,7 @@
 
 }
 
-.Get_container{
+.Get_container {
     width: 80%;
     margin: 0 auto;
     position: absolute;
@@ -134,91 +142,140 @@
     border-radius: 15px;
     box-shadow: 0px 50px 60px #AACE5099;
 }
-.Get_container_textbox{
+
+.Get_container_textbox {
     height: fit-content;
-    margin: auto ;
+    margin: auto;
 }
+
 @media (min-width: 320px) and (max-width:372px) {
-    .div_three{
+    .div_three {
         letter-spacing: 0.6px;
+    }
+    .get_text{
+        font-size: 36px;
+    }
+    .foot_detail_container {
+        padding-top: 55% !important;
+    }
+}
+
+@media (min-width: 567px) and (max-width:600px) {
+    .enjoy_text {
+        font-size: 9px;
     }
 }
 
 @media (min-width: 567px) and (max-width:767px) {
 
-    .foot_detail_container{
+    .foot_detail_container {
         padding-top: 25% !important;
     }
-    .div_two{
+
+    .div_two {
         width: 28% !important;
     }
-    .div_three{
+
+    .div_three {
         width: 52% !important;
         font-size: small;
     }
-    .Get_title{
+
+    .Get_title {
         font-size: large;
     }
-    .contact_main_div{
+
+    .contact_main_div {
         width: fit-content;
         margin-left: auto;
         margin-right: 1rem;
     }
 
+    .cover_div {
+        width: 90% !important;
+        left: 5% !important;
+    }
+
 }
+
 @media (min-width: 767px) and (max-width:991px) {
 
-    .foot_detail_container{
+    .foot_detail_container {
         padding-top: 15% !important;
     }
-    .Get_title{
+
+    .Get_title {
         font-size: x-large;
     }
-    .footer_content{
+
+    .footer_content {
         height: 85vh !important;
+    }
+
+    .navlink_container {
+        margin: 0 auto;
+    }
+    .get_text{
+        font-size: 2.3125rem !important;
+    }
+    .enjoy_text{
+        font-size: 13px;
     }
 }
 
 @media (min-width: 991px) and (max-width:1200px) {
 
-    .Get_title{
+    .Get_title {
         font-size: xx-large;
     }
+
     .Get_container_textbox P {
         font-size: large;
     }
-    .foot_detail_container{
+
+    .foot_detail_container {
         padding-top: 15% !important;
     }
-    .contact_main_div{
+
+    .contact_main_div {
         width: fit-content;
         margin-left: auto;
         margin-right: 1.25rem;
     }
-    .footer_content{
+
+    .footer_content {
         height: 85vh !important;
+    }
+
+    .navlink_container {
+        margin: 0 auto;
     }
 }
 
 @media (min-width: 1200px) and (max-width:1400px) {
 
-    .Get_title{
+    .Get_title {
         font-size: xxx-large;
     }
+
     .Get_container_textbox P {
         font-size: large;
     }
-    .foot_detail_container{
+
+    .foot_detail_container {
         padding-top: 12% !important;
     }
-    .footer_content{
+
+    .footer_content {
         height: 75vh !important;
     }
-    .logo_img{
+
+    .logo_img {
         width: 400px !important;
         height: 200px;
     }
-    .contact_div4{
+
+    .contact_div4 {
         margin-bottom: 50px !important;
     }
 
