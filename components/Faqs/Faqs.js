@@ -13,7 +13,7 @@ export default function Faqs() {
   const [toggle7, settoggle7] = useState(false);
   const [toggle8, settoggle8] = useState(false);
   const [toggle9, settoggle9] = useState(false);
-  const [toggle10, settoggle10] = useState(false);
+ const [toggle10, settoggle10] = useState(false);
 
   return (
     <>
@@ -21,7 +21,7 @@ export default function Faqs() {
         <div
           className={`relative flex container max-w-[90%] mx-auto font-body rounded-md ${styles.input_div}`}
         >
-          <img src="/search.svg" className=" lg:pl-5" />
+          <Image src="/search.svg" width={30} height={30}   className=" lg:pl-5" />
           <input
             className={`w-[80%] py-3 px-3  ${styles.input}`}
             type="text"
@@ -44,7 +44,7 @@ export default function Faqs() {
                 styles.cont_div
               }`}
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg ">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg ">
                 {" "}
                 What is a CRM?
               </span>
@@ -75,7 +75,7 @@ export default function Faqs() {
                   className={`  flex sm:pt-3 justify-between font-body text-[#163828] mb-3 my-auto `}
                 >
                   <div>
-                    <span className="leading-[1.12px] sm:text-sm md:font-bold sm:font-semibold  ">
+                    <span className="leading-[1.12px] sm:text-sm md:font-semibold sm:font-semibold  ">
                       What is a CRM?
                     </span>
                   </div>
@@ -126,7 +126,7 @@ export default function Faqs() {
              ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className=" sm:font-semibold md:font-bold  sm:text-xs md:text-lg">
+              <span className=" sm:font-semibold md:font-semibold  sm:text-xs md:text-lg">
                 What are the benefits of{" "}
                 <br className="sm:block md:hidden lg:hidden" /> Wakanda CRM
                 System?
@@ -254,7 +254,7 @@ export default function Faqs() {
                 ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg">
                 {" "}
                 How Does CRM Work?
               </span>
@@ -332,7 +332,7 @@ export default function Faqs() {
                 ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg">
                 {" "}
                 How can Wakanda CRM improve my business process?
               </span>
@@ -400,7 +400,7 @@ export default function Faqs() {
                 ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg">
                 {" "}
                 What are examples of Wakanda CRM processes in sales, <br />
                 marketing and service?
@@ -475,7 +475,7 @@ export default function Faqs() {
                 ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg">
                 How can CRM help me keep my customers happy?
               </span>
 
@@ -548,7 +548,7 @@ export default function Faqs() {
                 ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg">
                 Is Wakanda CRM worth it if I have a small customer base?
               </span>
 
@@ -619,7 +619,7 @@ export default function Faqs() {
                 ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg">
                 Does CRM help my teams work better together?
               </span>
 
@@ -689,7 +689,7 @@ export default function Faqs() {
                 ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg">
                 Is Wakanda CRM customizable for my business?
               </span>
 
@@ -756,7 +756,7 @@ export default function Faqs() {
                 ${styles.cont_div}`}
               id="Faqs_div2"
             >
-              <span className="sm:font-semibold md:font-bold sm:text-xs md:text-lg">
+              <span className="sm:font-semibold md:font-semibold sm:text-xs md:text-lg">
                 Signs that you need CRM
               </span>
 

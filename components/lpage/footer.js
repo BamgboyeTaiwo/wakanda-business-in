@@ -7,36 +7,62 @@ export default function footer() {
   return (
     <footer className={`relative bg-[#00A85A] pt-24 text-body`}>
       <div
-        className={` bg-[#C1DE76] shadow-[0_25px_60px_-18px_rgba(193,222,118,0.9)]  lg:flex sm:w-[90%]  lg:w-[80%] absolute -top-32 sm:left-5 lg:left-40 pt-8 pb-10 tracking-wider  rounded-xl `}
+        className={` bg-[#C1DE76] shadow-[0_25px_60px_-18px_rgba(193,222,118,0.9)]  lg:flex sm:w-[90%]  lg:w-[80%] md:w-[90%] md:mx-auto absolute -top-32 sm:left-5 lg:left-[10%] pt-8 pb-10 tracking-wider  rounded-xl `}
       >
         <div
-          className={` sm:block md:flex justify-between  sm:w-[80%]  lg:px-20`}
+          className={`${styles.cover_div} sm:ml-[1.6rem] md:left-[5%] relative sm:block md:flex justify-between  sm:w-[80%] lg:w-[90%]  xxlg:px-20 `}
         >
-          <div className="pt-6 ">
-            <h1 className="font-semibold text-[44px] text-left font-body">
-              Get the Wakanda App
+          <div className="md:pt-6 sm:w-100  md:w-[68%]">
+            <h1
+              className={`font-semibold text-[44px] md:text-[38px] lg:text-[44px] text-left font-body ${styles.get_text}`}
+            >
+              Get the <br className="sm:block md:block lg:hidden" /> Wakanda App
             </h1>
-            <p className="lg:text-[16px] md:text-[10px] sm:text-[15px] font-body  ">
+            <p
+              className={`lg:text-[16px] md:text-[10px] sm:text-[15px] font-body ${styles.enjoy_text} `}
+            >
               Enjoy alot more awesome features on the Wakanda Mobile App
             </p>
           </div>
 
-          <div className="lg:absolute sm:top:16 md:right-24">
-            <div>
-              <Image
-                src="/GETAPPSTORE.svg"
-                alt="Wakanda"
-                width={180}
-                height={65}
-              />
+          <div className=" sm:hidden md:block sm:top:16 md:right-24 lg:w-[30%] sm:w-100 ">
+            <div className="my-auto md:pt-6 lg:pt-0">
+              <div>
+                <Image
+                  src="/GETAPPSTORE.svg"
+                  alt="Wakanda"
+                  width={180}
+                  height={65}
+                />
+              </div>
+              <div>
+                <Image
+                  src="/GetgooglePlay.svg"
+                  alt="Wakanda"
+                  width={180}
+                  height={65}
+                />
+              </div>
             </div>
-            <div>
-              <Image
-                src="/GetgooglePlay.svg"
-                alt="Wakanda"
-                width={180}
-                height={65}
-              />
+          </div>
+          <div className=" sm:block md:hidden lg:hidden sm:top:16 md:right-24 lg:w-[30%] sm:w-100 ">
+            <div className="my-auto md:pt-6 lg:pt-0">
+              <div>
+                <Image
+                  src="/GETAPPSTORE.svg"
+                  alt="Wakanda"
+                  width={280}
+                  height={95}
+                />
+              </div>
+              <div>
+                <Image
+                  src="/GetgooglePlay.svg"
+                  alt="Wakanda"
+                  width={280}
+                  height={95}
+                />
+              </div>
             </div>
           </div>
         </div>

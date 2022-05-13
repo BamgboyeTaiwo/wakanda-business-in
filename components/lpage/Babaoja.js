@@ -4,39 +4,44 @@ import Image from "next/image";
 
 export default function Babaoja() {
   return (
-    <>
-      <div
-        className={`container mt-3 mb-3 lg:rounded-[1.5rem] lg:flex ${styles.container}`}
-      >
-        <div className={`  ${styles.div_top}`}>
-          <div className={`flex  w-[fit-content]`}>
-            <div>
-              <Image
-                src="/Group 695.svg"
-                alt="About Image"
-                // placeholder="blur"
-                // blurDataURL="/about-us.svg"  box-shadow: 0px 30px 50px ;
-                // quality={75}
-                width={70}
-                height={70}
-              />
-            </div>
-            <div className="my-auto">
-              <h1
-                className={`text-[#00A85A] font-body tracking-wider font-semibold sm:text-[15px]  ${styles.bonusheader}`}
-              >
-                BONUS
-              </h1>
-            </div>
+    <div
+      className={`container mt-3 mb-3 lg:rounded-[1.5rem] lg:flex ${styles.container}`}
+    >
+      <div className={`  ${styles.div_top}`}>
+        <div className={`flex  w-[fit-content]`}>
+          <div>
+            <Image
+              src="/Group 695.svg"
+              alt="About Image"
+              // placeholder="blur"
+              // blurDataURL="/about-us.svg"  box-shadow: 0px 30px 50px ;
+              // quality={75}
+              width={70}
+              height={70}
+            />
           </div>
+          <div className="my-auto">
+            <h1
+              className={`text-[#00A85A] font-body tracking-wider font-semibold sm:text-[15px]  ${styles.bonusheader}`}
+            >
+              BONUS
+            </h1>
+          </div>
+        </div>
 
-          <div
-            className={` text-[#163828] font-body tracking-[1.8px] mb-2 ${styles.content}`}
-          >
+        <div
+          className={` text-[#163828] font-body tracking-[1.8px] mb-2 ${styles.content}`}
+        >
+          <div>
             <h1 className={styles.content_h1}>
               Free! <br />
-              <span className="font-semibold sm:font-bold">
+              <span className="md:font-semibold sm:font-bold">
                 Business Consultation
+              </span>
+              <span className=" sm:font-[15px]">
+                Plus free on-boarding training to{" "}
+                <br className="sm:block md:block lg:hidden" />
+                help you get started smoothly.
               </span>
             </h1>
             <span className=" sm:font-[15px]">
@@ -107,6 +112,6 @@ export default function Babaoja() {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 }
