@@ -5,8 +5,6 @@ import Image from "next/image";
 export default function Babaoja() {
   return (
     <>
-
-
       <div
         className={`container mt-3 mb-3 lg:rounded-[1.5rem] lg:flex ${styles.container}`}
       >
@@ -38,16 +36,20 @@ export default function Babaoja() {
           <div
             className={` text-[#163828] font-body tracking-[1.8px] mb-2 ${styles.content}`}
           >
-            <h1 className={styles.content_h1}>
-              Free! <br />
-              <span className="font-semibold sm:font-bold">
-                Business Consultation
+
+            <div>
+              <h1 className={styles.content_h1}>
+                Free! <br />
+                <span className="md:font-semibold sm:font-bold">
+                  Business Consultation
+                </span>
+              </h1>
+              <span className=" sm:font-[15px]">
+                Plus free on-boarding training to{" "}
+                <br className="sm:block md:block lg:hidden" />
+                help you get started smoothly.
               </span>
-            </h1>
-            <span className=" sm:font-[15px]">
-              Plus free on-boarding training to <br className="sm:block md:block lg:hidden"/>
-              help you get started smoothly.
-            </span>
+            </div>
           </div>
           <div
             className={`grid grid-cols-12 ${styles.button_div} lg:mb-5 md:hidden lg:block sm:hidden`}
