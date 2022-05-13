@@ -5,8 +5,6 @@ import Image from "next/image";
 export default function Babaoja() {
   return (
     <>
-
-
       <div
         className={`container mt-3 mb-3 lg:rounded-[1.5rem] lg:flex ${styles.container}`}
       >
@@ -21,9 +19,6 @@ export default function Babaoja() {
                 // quality={75}
                 width={70}
                 height={70}
-                // width={472}
-                // height={356}
-                // loading="lazy"
               />
             </div>
             <div className="my-auto">
@@ -45,7 +40,8 @@ export default function Babaoja() {
               </span>
             </h1>
             <span className=" sm:font-[15px]">
-              Plus free on-boarding training to <br className="sm:block md:block lg:hidden"/>
+              Plus free on-boarding training to{" "}
+              <br className="sm:block md:block lg:hidden" />
               help you get started smoothly.
             </span>
           </div>
@@ -69,12 +65,13 @@ export default function Babaoja() {
         </div>
         <div className={` ml-auto sm:mb-2 md:mb-3 lg:mb-0`}>
           <div>
-            <img
+            {/* <Image
               src="/Group 698.svg"
               alt="BabaOja Image"
               width={200}
+              height={100}
               className={` sm:block md:block lg:hidden xxlg:hidden ml-9 ${styles.img}`}
-            />
+            /> */}
           </div>
           {/* <img
           className={` sm:block md:block lg:hidden xxlg:hidden ${styles.img}`}
@@ -84,12 +81,12 @@ export default function Babaoja() {
             height={850}
             width={620} /> */}
 
-          <img
+          <Image
             className={` ${styles.img}`}
             src="/BabaOja.svg"
             alt="BabaOja Image"
             // width={540}
-            height={850}
+            height={250}
             width={400}
             // height={350}
           />

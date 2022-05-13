@@ -37,7 +37,7 @@ export default function Home() {
             <CustomerEmpowerment />
             <StaffMang />
             <Pricing />
-            <Babaoja/>
+            <Babaoja />
             <Ebook />
           </main>
         </div>

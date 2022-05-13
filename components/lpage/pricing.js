@@ -9,7 +9,7 @@ export default function Pricing() {
         <h1 className="font-body border-green-600 border-b-8 mt-12 font-semibold text-center p-2 ">
           Pricing
         </h1>
-        <div class=" md:px-10 w-5/6  rounded border-b border-gray-200">
+        <div class=" md:px-16 w-5/6  rounded">
           <table class=" table-auto  text-center flex flex-col justify-center items-center overflow-scroll md:mx-32 my-16 py-12 rounded-2xl shadow-3xl shadow-[#18A75D26]">
             <thead>
               <tr>

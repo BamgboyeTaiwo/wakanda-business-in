@@ -5,7 +5,7 @@ import USflag from "../../assets/united-states.png";
 import NGflag from "../../assets/nigeria.png";
 import styles from "./Forms.module.css";
 
-import { Formik } from "formik";
+import { useFormik } from "formik";
 
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -56,6 +56,45 @@ export const Form = () => {
   //   }
   // };
 
+  const initialValues = {
+    FullName: "",
+    Email: "",
+    BusinessName: "",
+    Phone: "",
+  };
+
+  const onSubmit = (values) => {
+    console.log("Form Data ", values);
+  };
+
+  const validate = (values) => {
+    let errors = {};
+    //errors.FullName errors.Email errors.BusinessName errors.Phone
+    if (!values.FullName) {
+      errors.FullName = "Required";
+    }
+    if (!values.Email) {
+      errors.Email = "Required";
+    } else if (
+      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+    ) {
+      errors.Email = "Invalid Email Format";
+    }
+    if (!values.BusinessName) {
+      errors.BusinessName = "Required";
+    }
+    if (!values.Phone) {
+      errors.Phone = "Required";
+    }
+    return errors;
+  };
+
+  const formik = useFormik({
+    initialValues,
+    onSubmit,
+    validate,
+  });
+
   return (
     <>
       <AnimatePresence>
@@ -69,84 +108,97 @@ export const Form = () => {
           >
             <h2 className="font-semibold">Sign Up here</h2>
             <p className="font-normal">and get started Instantly</p>
-            <Formik
-              initialValues={{
-                FullName: "",
-                email: "",
-                businessName: "",
-                phone: "",
-              }}
-              onSubmit={(values, actions) => {
-                setTimeout(() => {
-                  alert(JSON.stringify(values, null, 2));
-                  actions.setSubmitting(false);
-                }, 1000);
-              }}
-            >
-              {(props) => (
-                <form onSubmit={props.handleSubmit}>
-                  <div className={`w-full my-3 justify-start text-left`}>
-                    <label className="text-left pb-2 pt-3  text-sm text-[#87AC9B] font-medium">
-                      Full Name
-                      <span className="text-red-500 font-bold">{"*"}</span>
-                    </label>
-                    <input
-                      type="text"
-                      className={`${styles["text-input"]} w-full rounded-lg p-2`}
-                      onChange={props.handleChange}
-                      onBlur={props.handleBlur}
-                      value={props.values.FullName}
-                      name="FullName"
-                    />
-                    <label className="text-left text-[#87AC9B] pb-2 pt-3  text-sm font-medium">
-                      Email
-                      <span className="text-red-500 font-bold">{"*"}</span>
-                    </label>
-                    <input
-                      type="text"
-                      className={`${styles["text-input"]} w-full rounded-lg p-2`}
-                      onChange={props.handleChange}
-                      onBlur={props.handleBlur}
-                      value={props.values.email}
-                      name="email"
-                    />
-                    <label className="text-left text-[#87AC9B] pb-2 pt-3 text-sm font-medium">
-                      Phone NO.
-                      <span className="text-red-500 font-bold">{"*"}</span>
-                    </label>
-                    <input
-                      type="text"
-                      className={`${styles["text-input"]} w-full rounded-lg p-2`}
-                      onChange={props.handleChange}
-                      onBlur={props.handleBlur}
-                      value={props.values.phone}
-                      name="phone"
-                    />
-                    <label className="text-left text-[#87AC9B] pb-2 pt-3  text-sm font-medium">
-                      Business Name
-                      <span className="text-red-500 font-bold">{"*"}</span>
-                    </label>
-                    <input
-                      type="text"
-                      className={`${styles["text-input"]} w-full rounded-lg p-2`}
-                      onChange={props.handleChange}
-                      onBlur={props.handleBlur}
-                      value={props.values.businessName}
-                      name="businessName"
-                    />
-                    {props.errors.name && (
-                      <div id="feedback">{props.errors.name}</div>
-                    )}
-                    <button
-                      className={`transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-102 hover:bg-green-700 bg-green-700 duration-300 ${styles["signin-button"]} w-full text-white font-semibold mt-5 mb-3 py-4 px-4 border rounded-lg drop-shadow-lg`}
-                      type="submit"
-                    >
-                      Submit
-                    </button>
+
+            <form onSubmit={formik.handleSubmit}>
+              <div className={`w-full my-3 justify-start text-left`}>
+                <label
+                  htmlFor="FullName"
+                  className="text-left pb-2 pt-3  text-sm text-[#87AC9B] font-medium"
+                >
+                  Full Name
+                  <span className="text-red-500 font-bold">{"*"}</span>
+                </label>
+                <input
+                  type="text"
+                  className={`${styles["text-input"]} w-full rounded-lg p-2`}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.FullName}
+                  name="FullName"
+                />
+                {formik.errors.FullName && (
+                  <div id="feedback" className="text-red-600 text-sm">
+                    {formik.errors.FullName}
                   </div>
-                </form>
-              )}
-            </Formik>
+                )}
+                <label
+                  htmlFor="Email"
+                  className="text-left text-[#87AC9B] pb-2 pt-3  text-sm font-medium"
+                >
+                  Email
+                  <span className="text-red-500 font-bold">{"*"}</span>
+                </label>
+                <input
+                  type="text"
+                  className={`${styles["text-input"]} w-full rounded-lg p-2`}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.Email}
+                  name="Email"
+                />
+                {formik.errors.Email && (
+                  <div id="feedback" className="text-red-600 text-sm">
+                    {formik.errors.Email}
+                  </div>
+                )}
+                <label
+                  htmlFor="Phone"
+                  className="text-left text-[#87AC9B] pb-2 pt-3 text-sm font-medium"
+                >
+                  Phone NO.
+                  <span className="text-red-500 font-bold">{"*"}</span>
+                </label>
+                <input
+                  type="text"
+                  className={`${styles["text-input"]} w-full rounded-lg p-2`}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.Phone}
+                  name="Phone"
+                />
+                {formik.errors.Phone && (
+                  <div id="feedback" className="text-red-600 text-sm">
+                    {formik.errors.Phone}
+                  </div>
+                )}
+                <label
+                  htmlFor="BusinessName"
+                  className="text-left text-[#87AC9B] pb-2 pt-3  text-sm font-medium"
+                >
+                  Business Name
+                  <span className="text-red-500 font-bold">{"*"}</span>
+                </label>
+                <input
+                  type="text"
+                  className={`${styles["text-input"]} w-full rounded-lg p-2`}
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.BusinessName}
+                  name="BusinessName"
+                />
+                {formik.errors.BusinessName && (
+                  <div id="feedback" className="text-red-600 text-sm">
+                    {formik.errors.BusinessName}
+                  </div>
+                )}
+                <button
+                  className={`transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-102 hover:bg-green-700 bg-green-700 duration-300 ${styles["signin-button"]} w-full text-white font-semibold mt-5 mb-3 py-4 px-4 border rounded-lg drop-shadow-lg`}
+                  type="submit"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
           </div>
         </motion.div>
       </AnimatePresence>
