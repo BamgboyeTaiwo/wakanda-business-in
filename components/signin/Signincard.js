@@ -3,7 +3,7 @@ import Router, { useRouter } from "next/router";
 // import "firebase/firestore";
 import Image from "next/image";
 // import GHflag from "../../assets/flags/ghana.png";
-// import NGflag from "../../assets/flags/nigeria.png";
+
 // import { signInWithCustomToken } from "firebase/auth";
 // import { FBauth } from "../../configs/firebase-config";
 import styles from "./Signin.module.css";
