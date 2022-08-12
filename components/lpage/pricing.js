@@ -2,6 +2,18 @@ import React from "react";
 import Image from "next/image";
 import styles from "./ebook.module.css";
 
+const Button = ({ colors }) => {
+  return (
+    <div className={`grid grid-cols-12  md:grid lg:hidden sm:grid `}>
+      <button
+        className={`sm:mt-3 sm:mb-9 md:my-4 bg-[${colors}] col-span-6 md:col-span-10 md:col-start-2 sm:col-span-10 sm:col-start-2   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
+      >
+        GET STARTED
+      </button>
+    </div>
+  );
+};
+
 export default function Pricing() {
   return (
     <>
@@ -22,9 +34,11 @@ export default function Pricing() {
                   <p className="font-normal text-[#87AC9B] text-center">
                     Forever
                   </p>
-                  <button class="rounded-lg bg-[#EA66E0] text-white font-body mb-6 font-semibold px-6 py-3 ">
+                  <Button color="#EA66E0" />
+
+                  {/* <button class="rounded-lg bg-[#EA66E0] text-white font-body mb-6 font-semibold px-6 py-3 ">
                     GET STARTED
-                  </button>
+                  </button> */}
                 </th>
                 <th className="px-2 border-[#F46E56] border-b-8 ">
                   <p className="text-[#F46E56] text-center">PROFESSIONAL</p>

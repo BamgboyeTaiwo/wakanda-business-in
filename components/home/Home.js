@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Wakanda Business</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

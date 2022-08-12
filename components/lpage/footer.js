@@ -5,9 +5,9 @@ import styles from "./footer.module.css";
 
 export default function footer() {
   return (
-    <footer className={`relative bg-[#00A85A] pt-24 text-body`}>
+    <footer className={` relative bg-[#00A85A] `}>
       <div
-        className={` bg-[#C1DE76] shadow-[0_25px_60px_-18px_rgba(193,222,118,0.9)]  lg:flex sm:w-[90%]  lg:w-[80%] md:w-[90%] md:mx-auto absolute -top-32 sm:left-5 lg:left-[10%] pt-8 pb-10 tracking-wider  rounded-xl `}
+        className={` bg-[#C1DE76] shadow-[0_25px_60px_-18px_rgba(193,222,118,0.9)] z-50 lg:flex sm:w-[90%]  lg:w-[80%] md:w-[90%] md:mx-auto absolute sm:-top-96 md:-top-32 sm:left-5 lg:left-[10%] pt-8 pb-10 tracking-wider  rounded-xl `}
       >
         <div
           className={`${styles.cover_div} sm:ml-[1.6rem] md:left-[5%] relative sm:block md:flex justify-between  sm:w-[80%] lg:w-[90%]  xxlg:px-20 `}
@@ -67,118 +67,135 @@ export default function footer() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 bg-[#00A85A]text-body">
-        <div>
-          <div
-            className={`
-         mt-8 col-span-3  sm:row-span-12 sm:col-span-12 sm:w-100 lg:col-span-3 md:col-span-3 lg:w-25 sm:pl-[5%]
-                `}
-          >
-            <Image src="/Group-706.svg" alt="Wakanda" width={200} height={50} />
-          </div>
-        </div>
-        <div>
-          <h6 className={styles.contact_header}> LINKS </h6>
-          <h6 className="text-white"> About Us </h6>
-          <h6 className="text-white"> Our Offers </h6>
-          <h6 className="text-white"> Pricing </h6>
-          <h6 className="text-white"> FAQs </h6>
-        </div>
-        <div>
-          <h6 className={styles.contact_header}> CONTACTS: </h6>
-          <div className="flex flex-col text-white">
-            <div className={` ${styles.contact_div1}`}>
-              <span className="mr-2">
-                <Image
-                  src="/location-2.svg"
-                  alt="Wakanda"
-                  width={30}
-                  height={15}
-                />
-              </span>
 
-              <span>42 Montgomery Rd, Yaba, Lagos.</span>
-            </div>
-            <div className={` ${styles.contact_div2}`}>
-              <span className="mr-2">
-                <Image
-                  src="/mail-outline.svg"
-                  alt="Wakanda"
-                  width={30}
-                  height={15}
-                />
-              </span>
-              <span>
-                <span>Christian@african-founders.com</span>
-                <br />
-                <span className="lg:ml-[2.5rem] sm:ml-[2.5rem] ">
-                  abiodun@african-founders.com
-                </span>
-              </span>
-            </div>
-            <div className={` ${styles.contact_div3}`}>
-              <span className="mr-2">
-                <Image src="/call.svg" alt="Wakanda" width={30} height={15} />
-              </span>
-              <span>08064289402</span>
-            </div>
+      <div className={`relative bg-[#00A85A] pt-28 `}>
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 md:grid-cols-3 sm:mx-3 sm:px-3  bg-[#00A85A]text-body lg:mb-[10px]">
+          <div>
             <div
-              className={` ${styles.contact_div4} sm:mt-5 lg:mt-5  lg:mb-[100px]`}
+              className={`
+         mt-8 col-span-3  sm:row-span-12 sm:col-span-12 sm:w-100 lg:col-span-3 md:col-span-3 lg:w-25 
+                `}
             >
-              <span className="mr-2">
-                <Image
-                  src="/Facebook.svg"
-                  alt="Wakanda"
-                  width={60}
-                  height={30}
-                />
-              </span>
-              <span className="mr-2">
-                <Image
-                  className={`m-none`}
-                  src="/instgram.svg"
-                  alt="Wakanda"
-                  width={60}
-                  height={30}
+              <Image
+                src="/Group-706.svg"
+                alt="Wakanda"
+                width={200}
+                height={50}
+              />
+            </div>
+          </div>
+          <div>
+            <h6 className="text-[#a9d046] font-body font-semibold  sm:text-sm md:text-[16px]">
+              LINKS
+            </h6>
+            <h6 className="text-white font-body font-semibold  sm:text-sm md:text-[15px]">
+              About Us
+            </h6>
+            <h6 className="text-white font-body font-semibold  sm:text-sm md:text-[15px]">
+              Our Offers
+            </h6>
+            <h6 className="text-white font-body font-semibold  sm:text-sm md:text-[15px]">
+              Pricing
+            </h6>
+            <h6 className="text-white font-body font-semibold  sm:text-sm md:text-[15px]">
+              FAQs
+            </h6>
+          </div>
+          <div>
+            <h6 className="text-[#a9d046] font-body font-semibold  sm:text-sm md:text-[16px]">
+              CONTACTS:
+            </h6>
+            <div className="flex flex-col text-white">
+              <div className={` flex flex-row items-center justify-start mb-1`}>
+                <span className="mr-2">
+                  <Image
+                    src="/location-2.svg"
+                    alt="Wakanda"
+                    width={30}
+                    height={15}
+                  />
+                </span>
 
-                  // width={10}
-                  // height={15}
-                />
-                {/* <Image
-                                            className={``}
-                                            src="/instgram.svg"
-                                            alt="Wakanda"
-                                            width={50}
-                                            height={25}
-                                        /> */}
-              </span>
-              <span className="mr-2">
-                <Image
-                  src="/Twitter.svg"
-                  alt="Wakanda"
-                  width={60}
-                  height={30}
-                />
-              </span>
+                <span className="text-white font-body font-normal  sm:text-sm md:text-[15px]">
+                  42 Montgomery Rd, Yaba, Lagos.
+                </span>
+              </div>
+              <div className={` flex flex-row items-center justify-start mb-1`}>
+                <span className="mr-2">
+                  <Image
+                    src="/mail-outline.svg"
+                    alt="Wakanda"
+                    width={30}
+                    height={15}
+                  />
+                </span>
+                <span>
+                  <span className="text-white font-body font-normal  sm:text-sm md:text-[15px]">
+                    Christian@african-founders.com
+                  </span>
+                  <br />
+                  <span className="text-white font-body font-normal  sm:text-sm md:text-[15px]">
+                    abiodun@african-founders.com
+                  </span>
+                </span>
+              </div>
+              <div className={`flex flex-row items-center justify-start mb-1`}>
+                <span className="mr-2">
+                  <Image src="/call.svg" alt="Wakanda" width={30} height={15} />
+                </span>
+                <span className="text-white font-body font-normal  sm:text-sm md:text-[15px]">
+                  08064289402
+                </span>
+              </div>
+              <div className={`mt-2  `}>
+                <span className="mr-7">
+                  <Image
+                    src="/Facebook.svg"
+                    alt="Wakanda"
+                    width={25}
+                    height={25}
+                  />
+                </span>
+                <span className="mr-7">
+                  <Image
+                    className={`m-none`}
+                    src="/instgram.svg"
+                    alt="Wakanda"
+                    width={25}
+                    height={25}
+
+                    // width={10}
+                    // height={15}
+                  />
+                </span>
+                <span className="mr-10">
+                  <Image
+                    src="/Twitter.svg"
+                    alt="Wakanda"
+                    width={25}
+                    height={25}
+                  />
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="text-center p-1 bg-[#A9D046] text-xs h-[40px] ">
-        <div className="mt-[10px]">
-          <span className="my-7">
-            Made with
-            <span>
-              <Image
-                src="/Red Heart.svg"
-                alt="Wakanda"
-                width={25}
-                height={12}
-              />
+        <div className="text-center p-1 bg-[#A9D046] text-xs h-[40px] ">
+          <div className="mt-[10px]">
+            <span className="my-7">
+              Made with
+              <span>
+                <Image
+                  src="/Red Heart.svg"
+                  alt="Wakanda"
+                  width={25}
+                  height={12}
+                />
+              </span>
+              by African Founders{" "}
             </span>
-            by African Founders{" "}
-          </span>
+          </div>
         </div>
       </div>
     </footer>
