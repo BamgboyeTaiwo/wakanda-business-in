@@ -22,12 +22,9 @@ export default function Content() {
             <Image
               src="/hero_image.png"
               alt="Header Image"
-              placeholder="blur"
-              blurDataURL="/hero_image.png"
               quality={75}
               width={472}
               height={560}
-              loading="lazy"
             />
           </div>
         </div>
