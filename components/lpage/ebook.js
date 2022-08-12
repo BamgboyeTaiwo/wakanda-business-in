@@ -5,7 +5,7 @@ import styles from "./ebook.module.css";
 export default function Ebook() {
   return (
     <div
-      className={`lg:flex md:flex sm:h-[fit-content] md:px-8  h-[100vh] bg-[#EFF7F0]  sm:mb-[30vh] sm:w-[100vw]  md:mb-0`}
+      className={`lg:flex md:flex sm:h-[fit-content] sm:pb-52 md:px-8  h-[100vh] bg-[#EFF7F0]  sm:mb-[30vh] sm:w-[100vw]  md:mb-0`}
     >
       <div>
         <Image
@@ -22,12 +22,12 @@ export default function Ebook() {
 
       <div className={`col-span-6 py-44  ${styles.content_div}`}>
         <h1
-          className={` text-[50px] tracking-wide  text-[#00A85A] font-semibold`}
+          className={` text-[50px] tracking-wide  text-[#00A85A] font-semibold text-`}
         >
           FREE! EBOOK
         </h1>
         <p
-          className={` text-[#163828] tracking-wide leading-9 font-medium sm:text-[x-large]`}
+          className={` text-[#163828] tracking-wide leading-9 font-body sm:text-lg`}
         >
           7 Reasons You Need To Turn <br /> Your Business To A Mobile
           <br /> Business
