@@ -4,13 +4,13 @@ import Footer from "../../components/lpage/footer";
 
 export default function Layout({ children }) {
   return (
-    <div>
+    <>
       <Head></Head>
-      <div>
-        <NavBar />
-      </div>
+
+      <NavBar />
+
       <div>{children}</div>
       <Footer />
-    </div>
+    </>
   );
 }

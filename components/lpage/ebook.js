@@ -9,13 +9,13 @@ export default function Ebook() {
     >
       <div>
         <Image
-          src="/e_book.svg"
+          src="/e-book.png"
           alt="E-book"
           placeholder="blur"
-          blurDataURL="/e_book.svg"
+          blurDataURL="/e-book.png"
           quality={75}
-          width={972}
-          height={860}
+          width={672}
+          height={660}
           loading="lazy"
         />
       </div>

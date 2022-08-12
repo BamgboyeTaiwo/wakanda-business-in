@@ -20,10 +20,10 @@ export default function Content() {
         <div className="flex ">
           <div className="self-start">
             <Image
-              src="/Home_Image.svg"
+              src="/hero_image.png"
               alt="Header Image"
               placeholder="blur"
-              blurDataURL="/Home_Image.svg"
+              blurDataURL="/hero_image.png"
               quality={75}
               width={472}
               height={560}

@@ -85,14 +85,11 @@ export default function staffManagement() {
             className={` ${styles.div1} col-span-8 sm:col-span-12 md:col-span-6 lg:col-span-7 lg:pt-2 ${styles.flex2}`}
           >
             <Image
-              src="/staff-management-phones.svg"
+              src="/staff_management.png"
               alt="Wakanda_staff_management"
-              // width={872}
-              // height={760}
-              width="1326"
-              height="1297"
+              width={872}
+              height={760}
               layout="responsive"
-              
 
               // width={250}
               // height={530}
