@@ -69,7 +69,7 @@ export default function footer() {
       </div>
 
       <div className={`relative bg-[#00A85A] pt-28 `}>
-        <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 md:grid-cols-3 sm:mx-3 sm:px-3  bg-[#00A85A]text-body lg:mb-[10px]">
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 md:grid-cols-3 sm:mx-3 sm:px-3  bg-[#00A85A]text-body lg:mb-[10px] ">
           <div>
             <div
               className={`
@@ -107,7 +107,7 @@ export default function footer() {
             </h6>
             <div className="flex flex-col text-white">
               <div className={` flex flex-row items-center justify-start mb-1`}>
-                <span className="mr-2">
+                <span className=" md:mr-2">
                   <Image
                     src="/location-2.svg"
                     alt="Wakanda"
@@ -120,8 +120,10 @@ export default function footer() {
                   42 Montgomery Rd, Yaba, Lagos.
                 </span>
               </div>
-              <div className={` flex flex-row items-center justify-start mb-1`}>
-                <span className="mr-2">
+              <div
+                className={` flex flex-row md:items-center justify-start mb-1`}
+              >
+                <span className=" md:mr-2">
                   <Image
                     src="/mail-outline.svg"
                     alt="Wakanda"
@@ -140,7 +142,7 @@ export default function footer() {
                 </span>
               </div>
               <div className={`flex flex-row items-center justify-start mb-1`}>
-                <span className="mr-2">
+                <span className="md:mr-2">
                   <Image src="/call.svg" alt="Wakanda" width={30} height={15} />
                 </span>
                 <span className="text-white font-body font-normal  sm:text-sm md:text-[15px]">
