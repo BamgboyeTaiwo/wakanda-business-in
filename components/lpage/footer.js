@@ -69,7 +69,7 @@ export default function footer() {
       </div>
 
       <div className={`relative bg-[#00A85A] pt-28 `}>
-        <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 md:grid-cols-3 sm:mx-3 sm:px-3  bg-[#00A85A]text-body lg:mb-[10px]">
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-4 md:grid-cols-3 sm:mx-3 sm:px-3  bg-[#00A85A]text-body lg:mb-[10px]  sm:justify-items-center">
           <div>
             <div
               className={`
