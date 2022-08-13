@@ -4,32 +4,34 @@ import styles from "./ebook.module.css";
 
 export default function Ebook() {
   return (
-    <div className="container py-32 sm:pb-96 md:pb-32 grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-2 sm:mb-10">
-      <div>
-        <Image src="/e-book.png" alt="E-book" width={472} height={460} />
-      </div>
+    <div className=" w-full bg-[#EFF7F0]">
+      <div className="container w-full py-32 sm:pb-96 md:pb-32 grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-2 sm:mb-10 bg-[#EFF7F0]">
+        <div>
+          <Image src="/e-book.png" alt="E-book" width={472} height={460} />
+        </div>
 
-      <div className="">
-        <h1
-          className={` text-[50px] tracking-wide  text-[#00A85A] font-semibold text-`}
-        >
-          FREE! EBOOK
-        </h1>
-        <p
-          className={` text-[#163828] tracking-wide leading-9 font-body sm:text-lg`}
-        >
-          7 Reasons You Need To Turn <br /> Your Business To A Mobile
-          <br /> Business
-        </p>
+        <div className="">
+          <h1
+            className={` text-[50px] tracking-wide  text-[#00A85A] font-semibold text-`}
+          >
+            FREE! EBOOK
+          </h1>
+          <p
+            className={` text-[#163828] tracking-wide leading-9 font-body sm:text-lg`}
+          >
+            7 Reasons You Need To Turn <br /> Your Business To A Mobile
+            <br /> Business
+          </p>
 
-        <button
-          className={`  mt-4 bg-[#00A85A] justify-self-end flex items-start justify-center font-body text-center text-white md:rounded lg:rounded
+          <button
+            className={`  mt-4 bg-[#00A85A] justify-self-end flex items-start justify-center font-body text-center text-white md:rounded lg:rounded
                     sm:py-7 sm:text-xl sm:rounded-[10px] sm:w-[70%] md:w-[40%]
                      md:py-3 md:px-3 md:text-[15px]
                      lg:py-3 lg:px-3  `}
-        >
-          GET IT NOW
-        </button>
+          >
+            GET IT NOW
+          </button>
+        </div>
       </div>
     </div>
     // <div
