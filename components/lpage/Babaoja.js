@@ -60,7 +60,7 @@ export default function Babaoja() {
               </div>
             </div>
             <div
-              className={` ml-auto sm:mb-2  lg:mb-0 md:relative left-[100px]`}
+              className={` ml-auto sm:mb-2  lg:mb-0 md:relative left-[119px]`}
             >
               <Image
                 className={` w-1/2`}
