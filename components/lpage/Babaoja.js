@@ -71,7 +71,7 @@ export default function Babaoja() {
           className={`grid grid-cols-12  md:grid lg:hidden sm:grid   ${styles.button_div}`}
         >
           <button
-            className={`sm:mt-3 sm:mb-9 md:my-4 bg-[#00A85A] col-span-6 md:col-span-10 md:col-start-2 sm:col-span-10 sm:col-start-2   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
+            className={`sm:mt-3 sm:mb-9 md:my-4 bg-[#00A85A] col-span-6 md:col-span-10 md:col-start-2 sm:col-span-10 sm:col-start-2  font-body  text-white font- tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
           >
             GET STARTED NOW {">"}
           </button>
