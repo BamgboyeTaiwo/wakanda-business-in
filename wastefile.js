@@ -2,55 +2,348 @@ import React from "react";
 import Image from "next/image";
 import styles from "./ebook.module.css";
 
-export default function Ebook() {
+const Button = ({ colors }) => {
   return (
-    // <div
-    //   className={`lg:flex md:flex sm:h-[fit-content] md:px-8  h-[100vh] bg-[#EFF7F0]  sm:mb-[30vh] sm:w-[100vw]  md:mb-0`}
-    // >
-    <div className="md:flex md:flex-row sm:grid">
-      <div>
-        <Image
-          src="/e_book.svg"
-          alt="E-book"
-          placeholder="blur"
-          blurDataURL="/e_book.svg"
-          quality={75}
-          width={928}
-          height={720}
-          // resizeMode="cover"
-          loading="lazy"
-        />
-      </div>
-
-      <div className={`col-span-6 py-44  ${styles.content_div}`}>
-        <h1
-          className={` text-[50px] tracking-wide  text-[#00A85A] font-semibold`}
-        >
-          FREE! EBOOK
-        </h1>
-        <p
-          className={` text-[#163828]  tracking-wide leading-9 font-medium sm:text-[x-large]`}
-        >
-          7 Reasons You Need To Turn <br /> Your Business To A Mobile
-          <br /> Business
-        </p>
-        <p className="text-normal ">
-          Create Internal communication channel with your staff, enhanced with
-          the ability to create different categories of chat with your company
-          community, and also anonymous voices chats for staffs to communicate
-          with the managent.
-        </p>
-
-        <button
-          className={` mt-4 bg-[#00A85A] font-body text-center text-white md:rounded lg:rounded
-                    sm:py-7 sm:text-xl sm:rounded-[10px] sm:w-[70%] md:w-[40%]
-                     md:py-3 md:px-3 md:text-[15px]
-                     lg:py-3 lg:px-3  `}
-        >
-          GET IT NOW
-        </button>
-      </div>
+    <div className={`grid grid-cols-12  md:grid lg:hidden sm:grid `}>
+      <button
+        className={`sm:mt-3 sm:mb-9 md:my-4 bg-[${colors}] col-span-6 md:col-span-10 md:col-start-2 sm:col-span-10 sm:col-start-2   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
+      >
+        GET STARTED
+      </button>
     </div>
+  );
+};
+
+export default function Pricing() {
+  return (
+    <>
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="font-body border-green-600 border-b-8 mt-12 font-semibold text-center p-2 ">
+          Pricing
+        </h1>
+        <div class=" md:px-16 w-5/6  rounded">
+          <table class=" table-auto  text-center flex flex-col justify-center items-center overflow-scroll md:mx-32 my-16 py-12 rounded-2xl shadow-3xl shadow-[#18A75D26]">
+            <thead>
+              <tr>
+                <th className="font-body px-2  font-semibold border-black border-b-8 ">
+                  BENEFITS
+                </th>
+                <th className=" border-[#EA66E0] px-10 border-b-8 ">
+                  <p className="text-[#EA66E0] text-center">STARTER</p>
+                  <h1 className="font-body font-semibold text-center">FREE!</h1>
+                  <p className="font-normal text-[#87AC9B] text-center">
+                    Forever
+                  </p>
+                  <Button color="#EA66E0" />
+
+                  {/* <button class="rounded-lg bg-[#EA66E0] text-white font-body mb-6 font-semibold px-6 py-3 ">
+                    GET STARTED
+                  </button> */}
+                </th>
+                <th className="px-2 border-[#F46E56] border-b-8 ">
+                  <p className="text-[#F46E56] text-center">PROFESSIONAL</p>
+                  <h1 className="font-body font-semibold text-center">N50K</h1>
+                  <p className="font-normal text-[#87AC9B] text-center">
+                    Per Month
+                  </p>
+
+                  <button class="rounded-lg bg-[#F46E56] text-white font-body mb-6 font-semibold px-9 py-3 ">
+                    GET STARTED
+                  </button>
+                </th>
+                <th className="px-8 border-[#4160E0] border-b-8 ">
+                  <p className="text-[#4160E0] text-center"> ENTERPRISE</p>
+                  <h1 className="font-body font-semibold text-center">N500K</h1>
+                  <p className="font-normal text-[#87AC9B] text-center">
+                    Per Month
+                  </p>
+                  <button class="rounded-lg bg-[#4160E0] text-white font-body mb-6 font-semibold px-9 py-3 ">
+                    GET STARTED
+                  </button>
+                </th>
+              </tr>
+              <tr className="font-body  bg-[#EFF7F0]">
+                <td className="font-body px-10  font-semibold  ">SMS</td>
+                <td className="  px-16 ">
+                  <p className=" text-center">50NGN/SMS</p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className="text-center">
+                    <span className="font-semibold ">500 Customized SMS</span>{" "}
+                    <br />
+                    Extendable @ 40 NGN /SMS
+                  </p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className=" text-center">
+                    <span className="font-semibold">5000 Customized SMS</span>{" "}
+                    <br />
+                    Extendable @30 NGN / SMS
+                  </p>
+                </td>
+              </tr>
+              <tr className="font-body  bg-[#FFFFFF]">
+                <td className="font-body font-semibold uppercase  ">
+                  Document Storage
+                </td>
+                <td className="  px-16 ">
+                  <p className=" text-center">400 NGN/GB</p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className="text-center">
+                    <span className="font-semibold">10GB Document Storage</span>{" "}
+                    <br />
+                    Extendable @ 300 NGN /GB
+                  </p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className=" text-center">
+                    <span className="font-semibold">
+                      100GB Document Storage{" "}
+                    </span>
+                    <br />
+                    Extendable @ 250 NGN /GB
+                  </p>
+                </td>
+              </tr>
+              <tr className="font-body   bg-[#EFF7F0]">
+                <td className="font-body font-semibold uppercase  ">
+                  SEATS & CUSTOMERS
+                </td>
+                <td className="  px-16 ">
+                  <p className=" text-center">
+                    <span className="font-semibold">20 Seats &</span> <br />
+                    Unlimited Customers
+                  </p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className="text-center">
+                    <span className="font-semibold">Up to 200 Seats</span>{" "}
+                    <br />
+                    Unlimited Customers
+                  </p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className=" text-center">
+                    <span className="font-semibold">Up to 1000 Seats</span>{" "}
+                    <br />
+                    Unlimited Customers
+                  </p>
+                </td>
+              </tr>
+              <tr className="font-body  bg-[#FFFFFF]">
+                <td className="font-body font-semibold uppercase  ">
+                  SUPPORTS
+                </td>
+                <td className="  px-16 ">
+                  <p className=" text-center">Basic Support</p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className="text-center">
+                    Dedicated Wakanda Setup &
+                    <br />
+                    <span className="font-semibold">
+                      Support Representative
+                    </span>
+                  </p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className=" text-center">
+                    Dedicated Wakanda Setup &
+                    <br />
+                    <span className="font-semibold">Support Team</span>
+                  </p>
+                </td>
+              </tr>
+
+              <tr className="font-body  bg-[#EFF7F0]">
+                <td className="font-body font-semibold uppercase  ">REPORTS</td>
+                <td className="  px-16 ">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <p className="text-center">Customized Reports</p>
+                </td>
+                <td className=" pt-2 ">
+                  <p className=" text-center">
+                    <span className="font-semibold">Extra</span> <br />
+                    Customized Reports
+                  </p>
+                </td>
+              </tr>
+              <tr className="font-body  bg-[#FFFFFF]">
+                <td className="font-body py-4 font-semibold uppercase  ">
+                  ROLE-BASED ACCESS
+                </td>
+                <td className="  px-16 ">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+              </tr>
+              <tr className="font-body  bg-[#EFF7F0]">
+                <td className="py-4 font-semibold uppercase  ">
+                  CSV CUSTOMER IMPORT
+                </td>
+                <td className="  px-16 ">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+              </tr>
+              <tr className="font-body  bg-[#FFFFFF]">
+                <td className="py-4 font-semibold uppercase  ">WEB COCKPIT</td>
+                <td className="  px-16 ">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+              </tr>
+              <tr className="font-body  bg-[#EFF7F0]">
+                <td className="py-4 font-semibold uppercase  ">
+                  END-END ENCRYPTION
+                </td>
+                <td className="  px-16 ">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+              </tr>
+              <tr className="font-body  bg-[#FFFFFF]">
+                <td className="py-4 font-semibold uppercase  ">
+                  WHITE-LABEL APP (NEGOTIABLE)
+                </td>
+                <td className="  px-16 ">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+                <td className=" pt-2 ">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={72}
+                    height={16}
+                  />
+                </td>
+              </tr>
+              <tr className="font-body  bg-[#FFFFFF]">
+                <td className=" font-semibold border-black border-t-8 ">
+                  <span className="text-red-600"> * </span>Prices excluding VAT.
+                </td>
+                <td className=" border-[#EA66E0]  border-t-8 px-10 ">
+                  <button class="rounded-lg mt-16 bg-[#EA66E0] text-white font-body mb-16 font-semibold px-9 py-3 ">
+                    GET STARTED
+                  </button>
+                </td>
+                <td className=" border-[#F46E56] border-t-8 pt-2 ">
+                  <button class="rounded-lg mt-16 bg-[#F46E56] text-white font-body mb-16 font-semibold px-9 py-3 ">
+                    GET STARTED
+                  </button>
+                </td>
+                <td className=" pt-2 border-[#4160E0] border-t-8 ">
+                  <button class="rounded-lg mt-16 bg-[#4160E0] text-white font-body mb-16 font-semibold px-9 py-3 ">
+                    GET STARTED
+                  </button>
+                </td>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </>
   );
 }
 
@@ -58,119 +351,367 @@ export default function Ebook() {
 
 
 import React from "react";
-import styles from "./Babaoja.module.css";
 import Image from "next/image";
+import styles from "./ebook.module.css";
 
-export default function Babaoja() {
+const Button = ({ colors }) => {
   return (
-    <div
-      className={`container mt-3 mb-3 lg:rounded-[1.5rem] lg:flex ${styles.container}`}
-    >
-      <div className={`  ${styles.div_top}`}>
-        <div className={`flex  w-[fit-content]`}>
-          <div>
-            <Image
-              src="/Group 695.svg"
-              alt="About Image"
-              // placeholder="blur"
-              // blurDataURL="/about-us.svg"  box-shadow: 0px 30px 50px ;
-              // quality={75}
-              width={70}
-              height={70}
-            />
-          </div>
-          <div className="my-auto">
-            <h1
-              className={`text-[#00A85A] font-body tracking-wider font-semibold sm:text-[15px]  ${styles.bonusheader}`}
-            >
-              BONUS
-            </h1>
-          </div>
-        </div>
-
-        <div
-          className={` text-[#163828] font-body tracking-[1.8px] mb-2 ${styles.content}`}
-        >
-          <div>
-            <h1 className={styles.content_h1}>
-              Free! <br />
-              <span className="md:font-semibold sm:font-bold">
-                Business Consultation
-              </span>
-              <span className=" sm:font-[15px]">
-                Plus free on-boarding training to{" "}
-                <br className="sm:block md:block lg:hidden" />
-                help you get started smoothly.
-              </span>
-            </h1>
-            <span className=" sm:font-[15px]">
-              Plus free on-boarding training to{" "}
-              <br className="sm:block md:block lg:hidden" />
-              help you get started smoothly.
-            </span>
-          </div>
-          <div
-            className={`grid grid-cols-12 ${styles.button_div} lg:mb-5 md:hidden lg:block sm:hidden`}
-          >
-            {/* <button
-              className={` w-25 bg-[#00A85A] md:col-span-8 md:col-start-3 md:p-1 ml-8   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)]  py-3 px-4 rounded-md `}
-            >
-              GET STARTED NOW {">"}
-            </button> */}
-            <button
-              className={` bg-[#00A85A] col-span-8 w-[45%]  text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
-            >
-              GET STARTED NOW {">"}
-            </button>
-          </div>
-          {/* <div className="grid grid-cols-3 w-25  sm:mb-3 lg:mb-6">
-            </div> */}
-        </div>
-        <div className={` ml-auto sm:mb-2 md:mb-3 lg:mb-0`}>
-          <div>
-            {/* <Image
-              src="/Group 698.svg"
-              alt="BabaOja Image"
-              width={200}
-              height={100}
-              className={` sm:block md:block lg:hidden xxlg:hidden ml-9 ${styles.img}`}
-            /> */}
-          </div>
-          {/* <img
-          className={` sm:block md:block lg:hidden xxlg:hidden ${styles.img}`}
-            src="/Group 698.svg"
-            alt="BabaOja Image"
-            // width={540}
-            height={850}
-            width={620} /> */}
-
-          <Image
-            className={` ${styles.img}`}
-            src="/BabaOja.svg"
-            alt="BabaOja Image"
-            // width={540}
-            height={250}
-            width={400}
-            // height={350}
-          />
-        </div>
-
-        <div
-          className={`grid grid-cols-12  md:grid lg:hidden sm:grid   ${styles.button_div}`}
-        >
-          {/* <button
-              className={` w-25 bg-[#00A85A] md:col-span-8 md:col-start-3 md:p-1 ml-8   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)]  py-3 px-4 rounded-md `}
-            >
-              GET STARTED NOW {">"}
-            </button> */}
-          <button
-            className={`sm:mt-3 sm:mb-9 md:my-4 bg-[#00A85A] col-span-6 md:col-span-10 md:col-start-2 sm:col-span-10 sm:col-start-2   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
-          >
-            GET STARTED NOW {">"}
-          </button>
-        </div>
-      </div>
+    <div className={`grid grid-cols-12  md:grid lg:hidden sm:grid `}>
+      <button
+        className={`sm:mt-3 sm:mb-9 md:my-4 bg-[${colors}] col-span-6 md:col-span-10 md:col-start-2 sm:col-span-10 sm:col-start-2   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
+      >
+        GET STARTED
+      </button>
     </div>
   );
-}
+};
 
+export default function Pricing() {
+  return (
+    <>
+      <div className="flex flex-col justify-center items-center mb-[150px]">
+        <h1 className="font-body border-green-600 border-b-8 mt-12 font-semibold text-center p-2 ">
+          Pricing
+        </h1>
+
+        <div className=" container  rounded-xl shadow shadow-[ #18a75d26]pricing-plans flex mt-6  mx-0 overflow-x-auto ">
+          <div className="pricing-plan-wrap lg:w-1/3 my-4 md:my-6 ">
+            <div className="pricing-plan border-t-4 border-solid border-white bg-white text-center max-w-sm  sm:mx-auto hover:border-indigo-600 transition-colors duration-300">
+              <div className="  border-[#163828] border-b-4 pb-[99px] pt-20 sm:pt-[80px]">
+                <p className="leading-tight font-semibold font-body text-[#163828] text-base md:mb-2 mb-8">
+                  BENEFITS
+                </p>
+              </div>
+
+              <div className=" leading-loose">
+                <div className="bg-[#EFF7F0]  px-5 font-body font-semibold text-xs md:py-[30px] sm:py-[40.5px]">
+                  sms
+                </div>
+                <div className="font-body font-semibold text-xs md:py-[30px] sm:py-[30px]">
+                  DOCUMENT STORAGE
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-semibold text-xs  md:py-[30px] sm:py-[37.5px]">
+                  SEATS & CUSTOMERS
+                </div>
+                <div className="font-body font-semibold text-xs py-4">
+                  SUPPORTS
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-semibold text-xs py-[30px]">
+                  REPORTS
+                </div>
+                <div className="font-body font-semibold text-xs py-[30px]">
+                  ROLE BASED ACCESS
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-semibold text-xs sm:py-[14px] md:py-[30px]">
+                  CSV CUSTOMER IMPORT
+                </div>
+                <div className="font-body font-semibold text-xs py-[30px]">
+                  WEB COCKPIT
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-semibold text-xs sm:py-[22px] md:py-[30px]">
+                  END-TO-END ENCRYPTION
+                </div>
+                <div className="font-body font-semibold text-xs sm:py-[16px] md:py-[24px]">
+                  WHITE-LABEL APP
+                  <span className=" font-normal">(NEGOTIABLE)</span>
+                </div>
+
+                <div className="mt-6 pt-8  border-[#163828] border-t-4 text-[#648B7A] font-body font-semibold text-sm text-center">
+                  <span className="text-red-600 text-lg "> * </span>
+                  Prices excluding VAT.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="pricing-plan-wrap lg:w-1/3 my-4 md:my-6">
+            <div className="pricing-plan border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+              <div className="  border-[#EA66E0] border-b-4 ">
+                <p className="leading-tight font-semibold font-body text-[#EA66E0] text-base mb-2">
+                  STARTER
+                </p>
+                <h4 className="text-[#163828] font-semibold text-[46px] font-body">
+                  FREE!
+                </h4>
+                <p className="text-[#87AC9B] font-body text-sm font-normal">
+                  Forever!
+                </p>
+                <button className="rounded-lg bg-[#EA66E0] text-white font-body mb-4 font-semibold px-9 py-3 ">
+                  GET STARTED
+                </button>
+              </div>
+              {/* <div className="pricing-amount bg-indigo-100 p-6 transition-colors duration-300">
+                    <div className="">
+                      <span className="text-4xl font-semibold">$19</span> /year
+                    </div>
+                  </div> */}
+              <div className=" leading-loose">
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs lg:py-[30px]  md:py-[30px] sm:py-[32px]">
+                  50 NGN/SMS
+                </div>
+                <div className="font-body font-normal text-xs py-[30px]">
+                  50 NGN/GB
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs py-[30px]">
+                  20 Seats & Unlimited Customers
+                </div>
+                <div className="font-body font-normal text-xs  py-[22.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs sm:py-[29px] md:py-[28.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="font-body font-normal text-xs sm:py-[29px] md:py-[28.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs sm:py-[29px] py-[28.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="font-body font-normal text-xs  py-[28.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body  text-xs  py-[28.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="font-body font-normal text-xs  py-[22.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="mt-6 py-4  border-[#EA66E0] border-t-4">
+                  <button className="rounded-lg bg-[#EA66E0] text-white font-body mb-4 font-semibold px-6 py-2 ">
+                    GET STARTED
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pricing-plan-wrap lg:w-1/3 my-4 md:my-6">
+            <div className="pricing-plan border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+              <div className="  border-[#F46E56] border-b-4 ">
+                <p className="leading-tight font-semibold font-body text-[#F46E56] text-base mb-2">
+                  PROFESSIONAL
+                </p>
+                <h4 className="text-[#163828] font-semibold text-[46px] font-body">
+                  N50K
+                </h4>
+                <p className="text-[#87AC9B] font-body text-sm font-normal">
+                  Per Month
+                </p>
+                <button className="rounded-lg bg-[#F46E56] text-white font-body mb-4 font-semibold px-9 py-3 ">
+                  GET STARTED
+                </button>
+              </div>
+              {/* <div className="pricing-amount bg-indigo-100 p-6 transition-colors duration-300">
+                    <div>
+                      <span className="text-4xl font-semibold">$29</span> /year
+                    </div>
+                  </div> */}
+              <div className=" leading-loose">
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs md:py-[22px] ">
+                  <span className="font-semibold">500 Customized SMS</span>
+                  <br />
+                  Extendable @ 40 NGN /SMS
+                </div>
+                <div className="font-body font-normal text-xs py-[22px]">
+                  <span className="font-semibold">10GB Document Storage</span>
+                  <br />
+                  Extendable @ 300 NGN /GB
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs py-[22px]">
+                  <span className="font-semibold">Up to 200 Seats</span>
+                  <br />
+                  Unlimited Customers
+                </div>
+                <div className="font-body font-normal text-xs py-[16px]">
+                  Dedicated Wakanda Setup
+                  <br />
+                  <span className="font-semibold">
+                    & Support Representative
+                  </span>
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs  sm: py-[22px] md:py-[30px]">
+                  Customized Report
+                </div>
+                <div className="font-body font-normal text-xs  py-[28.5px]">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body  text-xs py-[28.5px]">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="font-body font-normal text-xs  py-[28.5px]">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body  text-xs py-[28.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="font-body font-normal text-xs    py-[22.5px]">
+                  <Image
+                    src="/Red-X.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="mt-6 py-4  border-[#F46E56] border-t-4">
+                  <button className="rounded-lg bg-[#F46E56] text-white font-body mb-4 font-semibold px-6 py-2">
+                    GET STARTED
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="pricing-plan-wrap lg:w-1/3 my-4 md:my-6">
+            <div className="pricing-plan border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+              <div className="  border-[#4160E0] border-b-4 ">
+                <p className="leading-tight font-semibold font-body text-[#4160E0] text-base mb-2">
+                  ENTERPRISE
+                </p>
+                <h4 className="text-[#163828] font-semibold text-[46px] font-body">
+                  500K
+                </h4>
+                <p className="text-[#87AC9B] font-body text-sm font-normal">
+                  Per Month
+                </p>
+                <button className="rounded-lg bg-[#4160E0] text-white font-body mb-4 font-semibold px-9   py-3 ">
+                  GET STARTED
+                </button>
+              </div>
+              {/* <div className="pricing-amount bg-indigo-100 p-6 transition-colors duration-300">
+                    <div className="">
+                      <span className="text-4xl font-semibold">$39</span> /year
+                    </div>
+                  </div> */}
+              <div className=" leading-loose">
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs md:py-[22px] ">
+                  <span className="font-semibold">500 Customized SMS</span>
+                  <br />
+                  Extendable @ 30 NGN /SMS
+                </div>
+                <div className="font-body font-normal text-xs py-[22px]">
+                  <span className="font-semibold">100GB Document Storage</span>
+                  <br />
+                  Extendable @ 250 NGN /GB
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs md:py-[22px] sm:py-[14px]">
+                  <span className="font-semibold">Up to 10,000 Seats</span>
+                  <br />
+                  Unlimited Customers
+                </div>
+                <div className="font-body font-normal text-xs py-[16px]">
+                  Dedicated Wakanda Setup
+                  <br />
+                  <span className="font-semibold">& Support Team</span>
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs  sm:py-[14px] md:py-[22px]">
+                  <span className="font-semibold">Extra</span>
+                  <br />
+                  Customized Report
+                </div>
+                <div className="font-body font-normal text-xs  py-[28.5px]">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body  text-xs py-[28.5px]">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="font-body font-normal text-xs  py-[28.5px]">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="bg-[#EFF7F0]  px-5 font-body  text-xs py-[28.5px]">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="font-body font-normal text-xs  py-[22.5px]">
+                  <Image
+                    src="/checkmark-round.svg"
+                    alt="Wakanda"
+                    width={65}
+                    height={15}
+                  />
+                </div>
+                <div className="mt-6 py-4  border-[#4160E0] border-t-4">
+                  <button className="rounded-lg bg-[#4160E0] text-white font-body mb-4 font-semibold px-6 py-2 ">
+                    GET STARTED
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
