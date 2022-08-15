@@ -4,7 +4,7 @@ import styles from "./staffManagement.module.css";
 
 export default function staffManagement() {
   return (
-    <section className="bg-[#EFF7F0] pt-4 text-[#163828] font-['Raleway']">
+    <section className="bg-[#EFF7F0] pt-16 text-[#163828] font-['Raleway']">
       <div className={`container px-3 ${styles.containerst}`}>
         <div
           className={`grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12  ${styles}`}
@@ -82,14 +82,13 @@ export default function staffManagement() {
             </div>
           </div>
           <div
-            className={` ${styles.div1} col-span-8 sm:col-span-12 md:col-span-6 lg:col-span-7 lg:pt-2 ${styles.flex2}`}
+            className={`  col-span-8 sm:col-span-12 md:col-span-6 lg:col-span-6 md:ml-44 lg:pt-2 `}
           >
             <Image
               src="/staff_management.png"
               alt="Wakanda_staff_management"
-              width={872}
-              height={760}
-              layout="responsive"
+              width={372}
+              height={460}
 
               // width={250}
               // height={530}
