@@ -14,7 +14,7 @@ export default function customerEmpower() {
           >
             <div>
               <Image
-                src="/customer.svg"
+                src="/customer_empowerment.png"
                 width="1326"
                 height="1297"
                 layout="responsive"
@@ -125,7 +125,6 @@ export default function customerEmpower() {
           </div>
 
           {/* only display when small */}
-
 
           <div
             className={` sm:block md:hidden lg:hidden col-span-8 sm:col-span-12 md:col-span-7 lg:col-span-7 lg:pt-2`}

@@ -2,7 +2,7 @@
 import Head from "next/head";
 import React, { useState } from "react";
 import { Layout } from "../layout";
-import { Form } from "./Form";
+import { SignUpForm } from "./Form";
 import { ExchangeInfo } from "./Exchange";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <Layout>
         <div className="grid grid-cols-1 pt-12 pb-44 md:grid-cols-2  space-y-32  md:space-y-2 mb-38 place-items-center ">
           <div className=" md:justify-self-start md:ml-32">
-            <Form />
+            <SignUpForm />
           </div>
           <div className=" justify-self-center mx-8 md:mx-0 md:justify-self-start">
             <ExchangeInfo />
