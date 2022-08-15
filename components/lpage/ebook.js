@@ -4,9 +4,9 @@ import styles from "./ebook.module.css";
 
 export default function Ebook() {
   return (
-    <div
-      className={`lg:flex md:flex sm:h-[fit-content] sm:pb-52 md:px-8  h-[100vh] bg-[#EFF7F0]  sm:mb-[30vh] sm:w-[100vw]  md:mb-0`}
-    >
+
+    <div className="container py-32 sm:pb-96 md:pb-32 grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-2 sm:mb-16">
+
       <div>
         <Image
           src="/e_book.svg"
