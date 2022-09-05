@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Offers.module.css";
-import img1 from "../../public/layer2.png";
+// import img1 from "../../public/layer2.png";
 import Image from "next/image";
 // import Logo from "../../public/Group1.png";
 
