@@ -7,7 +7,7 @@ export default function footer() {
   return (
     <footer className={` relative bg-[#00A85A] `}>
       <div
-        className={` bg-[#C1DE76] shadow-[0_25px_60px_-18px_rgba(193,222,118,0.9)] z-50 lg:flex sm:w-[90%]  lg:w-[80%] md:w-[90%] md:mx-auto absolute sm:-top-[375px] md:-top-32 sm:left-5 lg:left-[10%] pt-8 pb-10 tracking-wider  rounded-xl `}
+        className={` bg-[#C1DE76] shadow-[0_25px_60px_-18px_rgba(193,222,118,0.9)] z-10 lg:flex sm:w-[90%]  lg:w-[80%] md:w-[90%] md:mx-auto absolute sm:-top-[375px] md:-top-32 sm:left-5 lg:left-[10%] pt-8 pb-10 tracking-wider  rounded-xl `}
       >
         <div
           className={`${styles.cover_div} sm:ml-[1.6rem] md:left-[5%] relative sm:block md:flex justify-between  sm:w-[80%] lg:w-[90%]  xxlg:px-20 `}

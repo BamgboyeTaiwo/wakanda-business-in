@@ -4,7 +4,10 @@ import styles from "./ebook.module.css";
 
 export default function Ebook() {
   return (
-    <div className="container py-32 sm:pb-96 md:pb-32 grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-2 sm:mb-16">
+    <div
+      // className="container py-32 sm:pb-96 md:pb-32 grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-2 sm:mb-16"
+      className=" bg-[#EFF7F0] py-32 sm:pb-96 md:pb-32 grid grid-cols-1 md:grid-cols-2 content-center justify-items-center gap-2 sm:mb-16"
+    >
       <div>
         <Image
           src="/e-book.png"

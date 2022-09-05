@@ -5,11 +5,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import Link from "next/link";
+import { FaUserAlt } from 'react-icons/fa';
 
 export default function NavBar() {
   return (
     <>
-      <div className="shadow-lg">
+      <div className="shadow-lg  h-22 bg-white z-20 relative ">
         <Navbar className={HeaderStyles.Navbar} collapseOnSelect expand="sm">
           {/* <Container className={HeaderStyles.Header}> */}
           <Link href="/">
@@ -43,10 +44,9 @@ export default function NavBar() {
                 Our Offers
               </Nav.Link> */}
               <Nav.Link
-                href="##"
+                href="#PricingComponent"
                 className={`${HeaderStyles.marginsides} ${HeaderStyles.navlink}`}
               >
-                {" "}
                 Pricing
               </Nav.Link>
               <Nav.Link
@@ -56,7 +56,7 @@ export default function NavBar() {
                 FAQs
               </Nav.Link>
               <Nav.Link
-                href="#"
+                href="#Contacts"
                 className={`${HeaderStyles.marginsides} ${HeaderStyles.navlink}`}
               >
                 Contacts
@@ -70,9 +70,17 @@ export default function NavBar() {
               </Button>
               <Button
                 className={`${HeaderStyles.signup} ${HeaderStyles.marginsides} ${HeaderStyles.buttonresize}`}
+                href="/signin"
               >
                 GET STARTED
               </Button>
+            <Button    href="/Profile">
+            <FaUserAlt 
+              className="opacity-50 cursor-pointer hover:opacity-100"
+             
+              size={40}
+            />
+            </Button>
             </Nav>
           </Navbar.Collapse>
           {/* </Container> */}

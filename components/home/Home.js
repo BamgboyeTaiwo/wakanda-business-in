@@ -9,10 +9,10 @@ import About from "../About/About";
 import Offers from "../lpage/Offers";
 import CustomerEmpowerment from "../lpage/customerEmpower";
 import StaffMang from "../lpage/staffManagement";
-import Footer from "../lpage/footer";
+import PricingComponent from "../lpage/PricingComponent";
 import Ebook from "../lpage/ebook";
-import Pricing from "../lpage/pricing";
-import Babaoja from "../lpage/Babaoja";
+
+import BabaojaComponent from "../lpage/BabaojaComponent";
 
 export default function Home() {
   return (
@@ -36,8 +36,8 @@ export default function Home() {
             <Offers />
             <CustomerEmpowerment />
             <StaffMang />
-            <Pricing />
-            <Babaoja />
+            <PricingComponent />
+            <BabaojaComponent />
             <Ebook />
           </main>
         </div>
