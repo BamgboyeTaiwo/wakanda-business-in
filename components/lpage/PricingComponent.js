@@ -1,30 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./ebook.module.css";
+import Price from "../Utility/Price";
+import Modal from "../Utility/Modal";
 
-const Button = ({ colors }) => {
-  return (
-    <div className={`grid grid-cols-12  md:grid lg:hidden sm:grid `}>
-      <button
-        className={`sm:mt-3 sm:mb-9 md:my-4 bg-[${colors}] col-span-6 md:col-span-10 md:col-start-2 sm:col-span-10 sm:col-start-2   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] py-3 rounded-[15px] `}
-      >
-        GET STARTED
-      </button>
-    </div>
-  );
-};
-
-export default function Pricing() {
+export default function PricingComponent() {
+  const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => {
+    setShowModal(!showModal);
+  };
   return (
     <>
-      <div className="flex flex-col justify-center items-center mb-[150px]">
+      <div
+        className="flex flex-col justify-center items-center mb-[150px]"
+        id="PricingComponent"
+      >
         <h1 className="font-body border-green-600 border-b-8 mt-12 font-semibold text-center p-2 ">
           Pricing
         </h1>
-
-        <div className=" container  rounded-xl shadow shadow-[ #18a75d26]pricing-plans flex mt-6  mx-0 overflow-x-auto ">
-          <div className="pricing-plan-wrap lg:w-1/3 my-4 md:my-6   md:mx-0  sm:mx-4">
-            <div className="pricing-plan border-t-4 border-solid border-white bg-white text-center max-w-sm  sm:mx-auto hover:border-indigo-600 transition-colors duration-300">
+        <div className="  container rounded-xl shadow-2xl shadow-[#18A75D26;]pricing-plans flex mt-6  mx-0 overflow-x-auto z-50 ">
+          <div className=" lg:w-1/3 my-4 md:my-6   md:mx-0  sm:mx-4">
+            <div className="pricing-plan rounded-tl-3xl border-t-4 border-solid border-white bg-white text-center max-w-sm  sm:mx-auto hover:border-indigo-600 transition-colors duration-300  z-50">
               <div className="  border-[#163828] border-b-4 md:pb-[83px] sm:pb-[60px] pt-20 sm:pt-[80px]">
                 <p className="leading-tight font-semibold font-body text-[#163828] text-base md:mb-2 mb-8">
                   BENEFITS
@@ -38,7 +34,7 @@ export default function Pricing() {
                 <div className="font-body font-semibold text-xs md:py-[30px] sm:py-[30px]">
                   DOCUMENT STORAGE
                 </div>
-                <div className="bg-[#EFF7F0]  px-5 font-body font-semibold text-xs  md:py-[30px] sm:py-[37.5px]">
+                <div className="bg-[#EFF7F0]  px-5 font-body font-semibold text-xs  md:py-[30px] sm:py-[30px]">
                   SEATS & CUSTOMERS
                 </div>
                 <div className="font-body font-semibold text-xs py-4">
@@ -83,7 +79,10 @@ export default function Pricing() {
                 <p className="text-[#87AC9B] font-body text-sm font-normal">
                   Forever!
                 </p>
-                <button className="rounded-lg bg-[#EA66E0] text-white font-body mb-4 font-semibold px-6 py-2 ">
+                <button
+                  className="rounded-lg bg-[#EA66E0]  shadow-[#fad7f6] shadow-xl text-white font-body mb-4 font-semibold px-6 py-2 "
+                  onClick={toggleModal}
+                >
                   GET STARTED
                 </button>
               </div>
@@ -99,7 +98,7 @@ export default function Pricing() {
                 <div className="font-body font-normal text-xs py-[30px]">
                   50 NGN/GB
                 </div>
-                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs py-[30px]">
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs sm:py-[22px] md:py-[30px]">
                   20 Seats & Unlimited Customers
                 </div>
                 <div className="font-body font-normal text-xs  py-[22.5px]">
@@ -159,14 +158,16 @@ export default function Pricing() {
                   />
                 </div>
                 <div className="mt-6 py-4  border-[#EA66E0] border-t-4">
-                  <button className="rounded-lg bg-[#EA66E0] text-white font-body mb-4 font-semibold px-6 py-2 ">
+                  <button
+                    className="rounded-lg bg-[#EA66E0] shadow-[#fad7f6] shadow-xl text-white font-body mb-4 font-semibold px-6 py-2 "
+                    onClick={toggleModal}
+                  >
                     GET STARTED
                   </button>
                 </div>
               </div>
             </div>
           </div>
-
           <div className="pricing-plan-wrap lg:w-1/3 my-4 md:my-6  md:mx-0 sm:mx-4">
             <div className="pricing-plan border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
               <div className="  border-[#F46E56] border-b-4 ">
@@ -179,7 +180,10 @@ export default function Pricing() {
                 <p className="text-[#87AC9B] font-body text-sm font-normal">
                   Per Month
                 </p>
-                <button className="rounded-lg bg-[#F46E56] text-white font-body mb-4 font-semibold px-6 py-2">
+                <button
+                  className="bg-[#F46E56] shadow-[#fdebe8]  rounded-lg text-white font-body mb-4 font-semibold px-6 py-2"
+                  onClick={toggleModal}
+                >
                   GET STARTED
                 </button>
               </div>
@@ -199,7 +203,7 @@ export default function Pricing() {
                   <br />
                   Extendable @ 300 NGN /GB
                 </div>
-                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs py-[22px]">
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs sm:py-[14px] md:py-[22px]">
                   <span className="font-semibold">Up to 200 Seats</span>
                   <br />
                   Unlimited Customers
@@ -255,16 +259,18 @@ export default function Pricing() {
                   />
                 </div>
                 <div className="mt-6 py-4  border-[#F46E56] border-t-4">
-                  <button className="rounded-lg bg-[#F46E56] text-white font-body mb-4 font-semibold px-6 py-2">
+                  <button
+                    className="rounded-lg bg-[#F46E56] shadow-[#fdebe8] shadow-xl text-white font-body mb-4 font-semibold px-6 py-2"
+                    onClick={() => setShowModal(!showModal)}
+                  >
                     GET STARTED
                   </button>
                 </div>
               </div>
             </div>
           </div>
-
           <div className="pricing-plan-wrap lg:w-1/3 my-4 md:my-6">
-            <div className="pricing-plan border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300">
+            <div className="pricing-plan  border-t-4 border-solid border-white bg-white text-center max-w-sm mx-auto hover:border-indigo-600 transition-colors duration-300 rounded-tr-3xl">
               <div className="  border-[#4160E0] border-b-4 ">
                 <p className="leading-tight font-semibold font-body text-[#4160E0] text-base mb-2">
                   ENTERPRISE
@@ -275,7 +281,10 @@ export default function Pricing() {
                 <p className="text-[#87AC9B] font-body text-sm font-normal">
                   Per Month
                 </p>
-                <button className="rounded-lg bg-[#4160E0] text-white font-body mb-4 font-semibold px-6 py-2 ">
+                <button
+                  className="rounded-lg shadow-[#4364DD4D] shadow-xl  bg-[#4160E0] text-white font-body mb-4 font-semibold px-6 py-2 "
+                  onClick={toggleModal}
+                >
                   GET STARTED
                 </button>
               </div>
@@ -295,7 +304,7 @@ export default function Pricing() {
                   <br />
                   Extendable @ 250 NGN /GB
                 </div>
-                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs md:py-[22px] sm:py-[14px]">
+                <div className="bg-[#EFF7F0]  px-5 font-body font-normal text-xs md:py-[22px] sm:py-[6px]">
                   <span className="font-semibold">Up to 10,000 Seats</span>
                   <br />
                   Unlimited Customers
@@ -351,13 +360,21 @@ export default function Pricing() {
                   />
                 </div>
                 <div className="mt-6 py-4  border-[#4160E0] border-t-4">
-                  <button className="rounded-lg bg-[#4160E0] text-white font-body mb-4 font-semibold px-6 py-2 ">
+                  <button
+                    className="rounded-lg bg-[#4160E0] shadow-[#4364DD4D] shadow-xl text-white font-body mb-4 font-semibold px-6 py-2 "
+                    onClick={toggleModal}
+                  >
                     GET STARTED
                   </button>
                 </div>
               </div>
             </div>
           </div>
+          {showModal && (
+            <>
+              <Modal toggleModal={toggleModal} />
+            </>
+          )}
         </div>
       </div>
     </>

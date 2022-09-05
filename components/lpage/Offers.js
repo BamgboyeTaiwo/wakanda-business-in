@@ -28,14 +28,14 @@ export default function Offers() {
         <div
           className={`grid grid-cols-12 sm:grid-cols-12 md:grid-cols-12 lg:grid-cols-12  ${styles}`}
         >
-          <div className="col-span-4 sm:col-span-12 md:col-span-5 lg:col-span-5">
+          <div className="col-span-4 sm:col-span-12 md:col-span-5 lg:col-span-5  ">
             <h1
               className={`text-[#00A85A] font-body tracking-wider font-semibold sm:text-[15px] mb-4 lg:mb-5 ${styles.businessheader}`}
             >
               BUSINESS/CUSTOMER MANAGEMENT
             </h1>
 
-            <div className="grid grid-cols-12 sm:mb-3 lg:mb-6">
+            <div className="grid grid-cols-12 sm:mb-3 lg:mb-6 sm:px-12">
               <div className="col-span-3 mx-2 ">
                 <Image
                   src="/data-management-icon.svg"
@@ -57,9 +57,8 @@ export default function Offers() {
                 </p>
               </div>
             </div>
-            {/* dgcusjf */}
 
-            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6">
+            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6 sm:px-12">
               <div className="col-span-3 mx-2 ">
                 <Image
                   src="/categorized-data-icon.svg"
@@ -80,7 +79,7 @@ export default function Offers() {
               </div>
             </div>
 
-            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6">
+            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6 sm:px-12">
               <div className="col-span-3 mx-2 ">
                 <Image
                   src="/alerts-icon.svg"
@@ -100,7 +99,7 @@ export default function Offers() {
               </div>
             </div>
 
-            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6">
+            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6 sm:px-12">
               <div className="col-span-3 mx-2 ">
                 <Image
                   src="/performance-icon.svg"
@@ -119,7 +118,7 @@ export default function Offers() {
               </div>
             </div>
 
-            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6">
+            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6 sm:px-12">
               <div className="col-span-3 mx-2 ">
                 <Image
                   src="/communicate-icon.svg"
@@ -141,7 +140,7 @@ export default function Offers() {
               </div>
             </div>
 
-            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6">
+            <div className="grid grid-cols-12  sm:mb-3 lg:mb-6 ">
               <button
                 className={`col-start-3 col-span-7 bg-[#00A85A] md:col-span-8 md:col-start-3 md:p-1 ml-8   text-white font-semibold tracking-wider shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)]  py-3 px-4 rounded`}
               >

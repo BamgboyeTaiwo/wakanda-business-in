@@ -22,13 +22,13 @@ export default function customerEmpower() {
             </div>
           </div>
 
-          <div className="col-span-4 sm:col-span-12 md:col-span-6 lg:col-span-5">
+          <div className="col-span-4 sm:col-span-12 md:col-span-6 lg:col-span-5 ">
             <h1
               className={`text-[#00A85A] font-['Raleway'] text-center ml-24 lg:ml-12 text-bold sm:text-[15px] mb-4 lg:mb-5 ${styles.businessheader}`}
             >
               CUSTOMER EMPOWERMENT
             </h1>
-            <div className="lg:mr-28 sm:mr-2">
+            <div className="lg:mr-28 sm:mr-2 sm:px-10">
               <div className="grid grid-cols-12 sm:mb-3 lg:mb-3 md:mb-1  ">
                 <div className="col-span-3 mx-2 ">
                   {/* <img src="/images/Group -8.png" alt="" /> */}
@@ -114,9 +114,9 @@ export default function customerEmpower() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-12  sm:mb-3 lg:mb-6">
+              <div className="grid grid-cols-12 sm:mb-3 lg:mb-6">
                 <button
-                  className={`col-start-3 col-span-7 ml-12 bg-[#00A85A] md:col-span-8 md:col-start-3 md:py-1 md:px-1 text-white shadow-[0_25px_60px_-18px_rgba(2,168,90,0.9)] font-semibold  py-3 px- rounded`}
+                  className={` col-span-12 text-center  lg:ml-10 bg-[#00A85A] md:col-span-8 md:col-start-3 md:py-1 md:px-1 } text-white font-semibold  py-3 px-8 rounded`}
                 >
                   GET STARTED NOW {">"}
                 </button>

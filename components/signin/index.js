@@ -16,7 +16,7 @@ export default function Home() {
       <Layout>
         <div className="grid grid-cols-1 pt-12 pb-44 md:grid-cols-2  space-y-32  md:space-y-2 mb-38 place-items-center ">
           <div className=" md:justify-self-start md:ml-32">
-            <SignUpForm />
+            <SignUpForm  type={'signup'}/>
           </div>
           <div className=" justify-self-center mx-8 md:mx-0 md:justify-self-start">
             <ExchangeInfo />

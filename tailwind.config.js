@@ -23,6 +23,9 @@ module.exports = {
       boxShadow: {
         "3xl": "0 35px 80px 15px rgba(0, 0, 0, 0.3)",
       },
+      backgroundImage: {
+        "image-background": "url('/BabaOjaWatermark.png')",
+      },
     },
 
     fontFamily: {
